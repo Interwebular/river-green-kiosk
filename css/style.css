@@ -1,10 +1,37 @@
-
+body {background: #444; margin:0; padding:0;}
 
 #viewport-container {
+	position: relative;
+	border:20px solid #e1dfdc;
+	width: 3800px;
+	height: 1040px;	
 
-	width: 3840px;
-	height: 1080px;
-
-	
 }
+
+#left-nav-wrap {height:900px; width:200px; margin:90px 0 0 -20px; float: left; position: relative; overflow: hidden; z-index:10;}
+
+#logo-wrap {height:250px; width:200px; background: url(../img/logo.jpg) no-repeat top left;}
+
+nav {height:0; width:200px; position: absolute; bottom:100px; left:0; background: #4d4d4d;  transition: all 1s ease;}
+nav.open {height:550px; width:200px; position: absolute; bottom:100px; left:0; background: #4d4d4d;}
+nav ul {padding:0; margin:0;}
+nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6;}
+nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-size:12px; text-transform: lowercase;}
+
+#menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left;}
+
+
+
+#zoom-out {position: relative;}
+#zoom-out #map-img-zoomed-out {z-index:1; position: absolute; top:0px; left:0px;}
+
+
+#zoom-out .hotspot-dot {z-index:2; height:42px; width:42px; background: red; position: absolute;}
+#zoom-out .hotspot-popup {height:460px; width:900px; background: #fff;}
+
+#zo-hotspot-1 {top:500px; left:1000px;}
+
+
+
+
 
