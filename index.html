@@ -22,7 +22,7 @@
 
         <div id="left-nav-wrap">
             <div id="logo-wrap"></div>
-            <nav>
+            <nav class="nav-left">
                 <ul>
                     <li class="load-page" data-page="the-views" data-height="90"><span>check out</span>the views</li>
                     <li class="load-page" data-page="amenities" data-height="200"><span>view the</span>amenities</li>
@@ -31,14 +31,25 @@
                     <li class="load-page" data-page="quick-facts" data-height="435"><span>view our</span>quick facts</li>
                 </ul>
             </nav>
-            <div id="menu-toggle"></div>
+            <div id="menu-toggle-left" class="menu-toggle"></div>
         </div>
 		
-        <div id="page-views" class="page-wrap">
+        <div id="page-views-left" class="page-wrap-left">
             
             <span class="left-arrow arrows"></span>
-            <span class="close-pages">X</span>
-            <div id="loaded-page-content"></div>
+            <span class="close-pages left">X</span>
+            <div id="loaded-page-content-left"></div>
+            
+        </div>
+
+
+
+
+         <div id="page-views-right" class="page-wrap-right">
+            
+            <span class="right-arrow arrows"></span>
+            <span class="close-pages right">X</span>
+            <div id="loaded-page-content-right"></div>
             
         </div>
 		
@@ -46,9 +57,12 @@
 
         <div id="zoom-out" class="out">
             <img src="img/map-zoom-out.jpg" id="map-img-zoomed-out" />
+
             <div id="zo-hotspot-1" class="hotspot-dot">
-            <span class="inner"></span>
-               <!--  <div id="hotspot-popup-1" class="hotspot-popup"></div> -->
+            <span class="border"></span>
+            <div class="hotspot-wrap">
+                <div id="hotspot-popup-1" class="hotspot-popup"></div>
+            </div>
             </div>
         </div>
 
@@ -57,7 +71,7 @@
 
          <div id="right-nav-wrap">
             <div id="logo-wrap"></div>
-            <nav>
+            <nav class="nav-right">
                 <ul>
                     <li class="load-page" data-page="the-views" data-height="90"><span>check out</span>the views</li>
                     <li class="load-page" data-page="amenities" data-height="200"><span>view the</span>amenities</li>
@@ -66,7 +80,7 @@
                     <li class="load-page" data-page="quick-facts" data-height="525"><span>view our</span>quick facts</li>
                 </ul>
             </nav>
-            <div id="menu-toggle"></div>
+            <div id="menu-toggle-right" class="menu-toggle">asdfadsf</div>
         </div>
 
 

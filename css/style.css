@@ -10,7 +10,7 @@ body {background: #444; margin:0; padding:0;}
 
 /*BOTH LEFT AND RIGHT NAVIGATION*/
 #left-nav-wrap {height:900px; width:200px; margin:90px 0 0 -20px; float: left; position: relative; overflow: hidden; z-index:10;}
-#right-nav-wrap {height:900px; width:200px; margin:90px 0 0 -20px; float: right; position: relative; overflow: hidden; z-index:10;}
+#right-nav-wrap {height:900px; width:200px; margin:90px -20px 0 0px; float: right; position: relative; overflow: hidden; z-index:10;}
 
 
 #logo-wrap {height:250px; width:200px; background: url(../img/logo.jpg) no-repeat top left;}
@@ -21,7 +21,7 @@ nav ul {padding:0; margin:0;}
 nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6; position: relative;}
 nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-size:12px; text-transform: lowercase;}
 
-#menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left;}
+.menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left;}
 
 
 
@@ -32,10 +32,18 @@ nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-s
 
 /*ZOOMED OUT HOT SPOTS*/
 
-.hotspot-dot {z-index:2;  border:3px solid red; position: absolute; border-radius: 42px;}
-.hotspot-dot .inner {height:30px; width:30px; margin:3px; background: red; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8);}
-#zoom-out .hotspot-popup {height:460px; width:900px; background: #fff;}
+.hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:2; background: red; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8);}
+.hotspot-dot .border {height:40px; width: 40px; z-index:2;  border:3px solid red; position: absolute; border-radius: 42px; top:-7px; left:-7px;}
+.hotspot-dot.on .border{ animation: hotspot-on 1.2s infinite;}
 
+@keyframes hotspot-on {
+0% {border-width:3px;}
+100% {border-width: 6px; opacity:0; top:-10px; left:-10px;
+}}
+
+.hotspot-wrap {position: relative;}
+.hotspot-popup {opacity:0;height:460px; width:900px; position: absolute; top:-340px; left:120px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
+.hotspot-popup.on {height:460px; width:900px; opacity:1;}
 
 
 #zo-hotspot-1 {top:500px; left:1000px;}
@@ -44,24 +52,38 @@ nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-s
 
 
 /*PAGES*/
-.page-wrap {height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
-.page-wrap.open {height: 590px; width: 1140px; margin:0 0 0 0 ;}
+.page-wrap-left {height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
+.page-wrap-left.open {height: 590px; width: 1140px; margin:0 0 0 0 ;}
+
+.page-wrap-right {height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
+.page-wrap-right.open {height: 590px; width: 1140px; margin:0 0 0 0 ;}
 
 /*.page-inner {position: relative;}*/
 
 .close-pages {position: absolute; top:20px; right:20px; font-size:40px;}
 
-.page-wrap .left-arrow { width: 0;
+.page-wrap-left .left-arrow { width: 0;
 					height: 0;
 					display: block;
 					border-style: solid;
 					border-width: 0px 0px 0px 0;
 					border-color: transparent #ffffff transparent transparent; content: ""; margin:0px 0 0 10px; transition: all 1s ease;}
 
-.page-wrap.open .left-arrow {margin:280px 0 0 -28px; border-width: 30px 30px 30px 0;}
+.page-wrap-left.open .left-arrow {margin:280px 0 0 -28px; border-width: 30px 30px 30px 0;}
 
 
-#page-views {left:200px;}
+
+.page-wrap-right .right-arrow { width: 0;
+								height: 0;
+								border-style: solid;
+								border-width: 0;
+								border-color: transparent transparent transparent #fff; content: ""; margin:0px 10px 0 0; float:right; transition: all 1s ease;}
+
+.page-wrap-right.open .right-arrow {margin:280px -28px 0 0px; border-width: 30px 0 30px 30px;}
+
+
+#page-views-left {left:200px;}
+#page-views-right {right:200px;}
 
 
 
