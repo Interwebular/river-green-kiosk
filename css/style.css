@@ -4,11 +4,30 @@ body {background: #444; margin:0; padding:0;}
 	position: relative;
 	border:20px solid #e1dfdc;
 	width: 3800px;
-	height: 1040px;	
+	height: 1040px;
+}
+
+.page-section {
+	display: none;
+}
+
+.animation-image {
+	display:none;
+	max-width: 100%;
+}
+
+#zoom-parent {
+	background: url('../img/zoom_animation/multi_touch_zoom_00000.jpg') 0 0 no-repeat;
+	position: absolute;
+	width: 3800px;
+	height: 1040px;
+	overflow: hidden;
+	z-index:1;
 }
 
 
-/*BOTH LEFT AND RIGHT NAVIGATION*/
+
+	 /*BOTH LEFT AND RIGHT NAVIGATION*/
 #left-nav-wrap {height:900px; width:200px; margin:90px 0 0 -20px; float: left; position: relative; overflow: hidden; z-index:10;}
 #right-nav-wrap {height:900px; width:200px; margin:90px -20px 0 0px; float: right; position: relative; overflow: hidden; z-index:10;}
 
@@ -25,17 +44,18 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 
 
-/*ZOOMED OUT VIEW*/
-#zoom-out {position: relative;}
-#zoom-out #map-img-zoomed-out {z-index:1; position: absolute; top:0px; left:0px;}
+/*ZOOMED OUT VIEW
+#zoom-parent {position: relative;}
+/* #zoom-parent #map-img-zoomed-out {z-index:1; position: absolute; top:0px; left:0px;} 
+#zoom-parent .animation-image { z-index:1; position: absolute; top:0px; left:0px; } */
 
 /*ZOOMED IN AND OUT CONTROLS*/
 #zoom-controls-wrapper {height:60px; width:280px; position: absolute; bottom:0; left:50%; margin:0 0 0 -140px; z-index:99999;}
 #zoom-controls {height: 60px; width: 160px; background: #999; position: relative; background: #282d2e;}
-#zoom-controls #out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769;}
-	#zoom-controls #out.on {background: #1baf97;}
-#zoom-controls #in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769;}
-	#zoom-controls #in.on {background: #1baf97;}
+#zoom-controls #zoom_out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769;}
+	#zoom-controls #zoom_out.on {background: #1baf97;}
+#zoom-controls #zoom_in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769;}
+	#zoom-controls #zoom_in.on {background: #1baf97;}
 
 /*ZOOMED OUT HOT SPOTS*/
 .hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:2; background: red; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8);}
@@ -54,11 +74,13 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 #zo-hotspot-1 {top:537px; left:1206px;}
 
-
+#hotspots-in {
+	display: none;
+}
 
 
 /*PAGES*/
-.page-wrap-left {height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
+.page-wrap-left {  height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
 .page-wrap-left.open {height: 590px; width: 1140px; margin:0 0 0 0 ;}
 
 .page-wrap-right {height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}

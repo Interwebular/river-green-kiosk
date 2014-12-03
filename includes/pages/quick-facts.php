@@ -1,0 +1,2 @@
+
+			<strong>QUICK FACTS</strong>
