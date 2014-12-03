@@ -1,9 +1,12 @@
 
 
 (function( $ ){
+
+
+
 $('#left-nav-wrap .load-page').click(function(e){
 	var whatPage = $(this).data('page');
-	var page = 'ajax/' + $(this).data('page') + '.html';
+	var page = $(this).data('page') + '.html';
 	var topMargin = $(this).data('height');
 
 
@@ -25,6 +28,8 @@ $('#left-nav-wrap .load-page').click(function(e){
 
 	e.preventDefault();
 });
+
+
 
 
 $('#right-nav-wrap .load-page').click(function(e){

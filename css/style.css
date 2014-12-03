@@ -16,12 +16,12 @@ body {background: #444; margin:0; padding:0;}
 #logo-wrap {height:250px; width:200px; background: url(../img/logo.jpg) no-repeat top left;}
 
 nav {height:0; width:200px; position: absolute; bottom:100px; left:0; background: #4d4d4d;  transition: all 1s ease;}
-nav.open {height:550px; width:200px; position: absolute; bottom:100px; left:0; background: #4d4d4d;}
+nav.open {height:550px; width:200px; position: absolute; bottom:101px; left:0; background: #4d4d4d;}
 nav ul {padding:0; margin:0;}
-nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6; position: relative;}
-nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-size:12px; text-transform: lowercase;}
+nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6; position: relative;  font-family: 'Gotham-Bold'; text-shadow: 0px -1px #000; letter-spacing: 2px;}
+nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transform: lowercase;  font-family: 'Didot-HTF-L11-Light-Ital'; text-shadow: 0px -1px #000; font-size:18px; color: #d3d3d3; line-height: 1;}
 
-.menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left;}
+.menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left; }
 
 
 
@@ -29,9 +29,15 @@ nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-s
 #zoom-out {position: relative;}
 #zoom-out #map-img-zoomed-out {z-index:1; position: absolute; top:0px; left:0px;}
 
+/*ZOOMED IN AND OUT CONTROLS*/
+#zoom-controls-wrapper {height:60px; width:280px; position: absolute; bottom:0; left:50%; margin:0 0 0 -140px; z-index:99999;}
+#zoom-controls {height: 60px; width: 160px; background: #999; position: relative; background: #282d2e;}
+#zoom-controls #out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769;}
+	#zoom-controls #out.on {background: #1baf97;}
+#zoom-controls #in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769;}
+	#zoom-controls #in.on {background: #1baf97;}
 
 /*ZOOMED OUT HOT SPOTS*/
-
 .hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:2; background: red; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8);}
 .hotspot-dot .border {height:40px; width: 40px; z-index:2;  border:3px solid red; position: absolute; border-radius: 42px; top:-7px; left:-7px;}
 .hotspot-dot.on .border{ animation: hotspot-on 1.2s infinite;}
@@ -46,7 +52,7 @@ nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-s
 .hotspot-popup.on {height:460px; width:900px; opacity:1;}
 
 
-#zo-hotspot-1 {top:500px; left:1000px;}
+#zo-hotspot-1 {top:537px; left:1206px;}
 
 
 
@@ -87,6 +93,128 @@ nav ul li span {padding:20px 0 0 0; display: block; font-family: georgia; font-s
 
 
 
+
+
+
+
+
+
+
+
+
+/*MOVE INTO SEPERATE STYLE SHEET - fix me */
+
+
+
+.panorama-viewport {
+	position: relative;
+	width: 600px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.panorama-container {
+	position: relative;
+	width: 100000px;
+	margin: 0;
+	padding: 0;
+
+}
+.panorama-control {
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	bottom: 50%;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	opacity:1;
+	text-align: left;
+}
+.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+	padding: 10px 0 0 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 60px;
+	line-height: 30px;
+	height:80px; 
+	width: 80px;
+	background: #1BAF97;
+	text-align: center;
+	font-family: 'Arial',sans-serif;
+}
+
+.panorama-control-left {float: left;}
+.panorama-control-right {float: right;}
+
+.panorama-control-left:hover {text-decoration: none; color: #fff;} 
+.panorama-control-right:hover {text-decoration: none; color: #fff;}
+
+.panorama-control-pause {
+	display: none;
+}
+.panorama-panel {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	background: #009cff;
+	opacity:1;
+	color: white;
+	padding: 4px;
+}
+.panorama-panel h2 {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	text-align: right;
+}
+.panorama-panel ul {
+	display: none;
+}
+.panorama {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.panorama-area {
+	border: 2px solid white;
+	filter: alpha(opacity=20);
+	opacity: .2;
+	background: black;
+	font-size: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	text-align: right;
+}
+.panorama-area-hover {
+	background: #0080e2;
+	cursor: pointer;
+} 
+
+.area0-hover {
+	background: #ff7e00;
+}
+.area1-hover {
+	background: #25bf5b;
+}
+.panorama-title {
+ 	position: absolute; 
+	right: 0;
+	top: 0; 
+	font-size: 16px; 
+	font-family: Verdana;
+	background: gray;
+	padding: 3px;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
 
 
 
