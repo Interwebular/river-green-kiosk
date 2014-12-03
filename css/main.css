@@ -99,6 +99,39 @@ textarea {
 
 
 
+ @font-face {
+                        font-family: 'Gotham-Medium';
+                        src: url('../fonts/Gotham-Medium.eot');
+       }
+
+      @font-face {
+                        font-family: 'Gotham-Medium';
+                        src: url('../fonts/Gotham-Medium.woff') format('woff'),
+                        url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+       }
+      
+     
+       @font-face {
+                        font-family: 'Gotham-Bold';
+                        src: url('../fonts/Gotham-Bold.eot');
+       }
+
+      @font-face {
+                        font-family: 'Gotham-Bold';
+                        src: url('../fonts/Gotham-Bold.woff') format('woff'),
+                        url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+       }
+       
+      @font-face {
+                        font-family: 'Didot-HTF-L11-Light-Ital';
+                        src: url('../fonts/DidotHTFL11LigIta.eot');
+       }
+
+      @font-face {
+                        font-family: 'Didot-HTF-L11-Light-Ital';
+                        src: url('../fonts/DidotHTFL11LigIta.woff') format('woff'),
+                        url('../fonts/DidotHTFL11LigIta.svg#Didot-HTF-L11-Light-Ital') format('svg');
+       }
 
 
 
