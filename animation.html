@@ -9,29 +9,75 @@
         <title>River Green Kiosk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/style.css">
 		<style>
 		.animation-image {
-			display:none;
+			 display:none;
+			
 		}
+		
+
 		</style>
 		
 		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+		
     </head>
     <body>
 
 		<a href="#" id="zoom_in">ZOOM IN</a> |
 		<a href="#" id="zoom_out">ZOOM OUT</a>
 		
+		<!--
 		<div id="zoom-parent">
-			<img class="animation-image" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/s960x960/10536500_10154587043650106_1561427154839096685_o.jpg" />
-			<img class="animation-image" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/10286881_10154064436780106_3469275468618919740_o.jpg" />
-			<img class="animation-image" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1546197_10153653018235106_1843985235_n.jpg?oh=ef16c454bb29c3924baaef4ad34f1f55&oe=550DAF5D&__gda__=1423156608_87aa054bf300e67703cf932eb51ad115" />
-		</div>
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00000.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00001.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00002.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00003.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00004.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00005.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00006.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00007.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00008.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00009.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00010.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00011.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00012.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00013.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00014.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00015.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00016.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00017.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00018.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00019.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00020.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00021.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00022.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00023.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00024.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00025.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00026.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00027.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00028.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00029.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00030.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00031.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00032.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00033.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00034.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00035.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00036.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00037.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00038.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00039.jpg">
+			<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00040.jpg">
+		</div> -->
+		
+		<div id="map"></div>
 
 
 	
@@ -39,5 +85,62 @@
 
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
         <script src="js/main.js"></script>
+		<!--
+		<script src="js/animation.js"></script>
+		<script src="js/jquery.preload.js"></script> -->
+		
+		<script src="js/jquery.jsmovie.1.4.4.min.js"></script>
+		<script>
+		
+		/*
+		$.imgpreload([
+			"img/zoom_animation/multi_touch_zoom_00000.jpg",
+			"img/zoom_animation/multi_touch_zoom_00001.jpg",
+			"img/zoom_animation/multi_touch_zoom_00002.jpg",
+			"img/zoom_animation/multi_touch_zoom_00003.jpg",
+			"img/zoom_animation/multi_touch_zoom_00004.jpg",
+			"img/zoom_animation/multi_touch_zoom_00005.jpg",
+			"img/zoom_animation/multi_touch_zoom_00006.jpg",
+			"img/zoom_animation/multi_touch_zoom_00007.jpg",
+			"img/zoom_animation/multi_touch_zoom_00008.jpg",
+			"img/zoom_animation/multi_touch_zoom_00009.jpg",
+			"img/zoom_animation/multi_touch_zoom_00010.jpg",
+			"img/zoom_animation/multi_touch_zoom_00011.jpg",
+			"img/zoom_animation/multi_touch_zoom_00012.jpg",
+			"img/zoom_animation/multi_touch_zoom_00013.jpg",
+			"img/zoom_animation/multi_touch_zoom_00014.jpg",
+			"img/zoom_animation/multi_touch_zoom_00015.jpg",
+			"img/zoom_animation/multi_touch_zoom_00016.jpg",
+			"img/zoom_animation/multi_touch_zoom_00017.jpg",
+			"img/zoom_animation/multi_touch_zoom_00018.jpg",
+			"img/zoom_animation/multi_touch_zoom_00019.jpg",
+			"img/zoom_animation/multi_touch_zoom_00020.jpg",
+			"img/zoom_animation/multi_touch_zoom_00021.jpg",
+			"img/zoom_animation/multi_touch_zoom_00022.jpg",
+			"img/zoom_animation/multi_touch_zoom_00023.jpg",
+			"img/zoom_animation/multi_touch_zoom_00024.jpg",
+			"img/zoom_animation/multi_touch_zoom_00025.jpg",
+			"img/zoom_animation/multi_touch_zoom_00026.jpg",
+			"img/zoom_animation/multi_touch_zoom_00027.jpg",
+			"img/zoom_animation/multi_touch_zoom_00028.jpg",
+			"img/zoom_animation/multi_touch_zoom_00029.jpg",
+			"img/zoom_animation/multi_touch_zoom_00030.jpg",
+			"img/zoom_animation/multi_touch_zoom_00031.jpg",
+			"img/zoom_animation/multi_touch_zoom_00032.jpg",
+			"img/zoom_animation/multi_touch_zoom_00033.jpg",
+			"img/zoom_animation/multi_touch_zoom_00034.jpg",
+			"img/zoom_animation/multi_touch_zoom_00035.jpg",
+			"img/zoom_animation/multi_touch_zoom_00036.jpg",
+			"img/zoom_animation/multi_touch_zoom_00037.jpg",
+			"img/zoom_animation/multi_touch_zoom_00038.jpg",
+			"img/zoom_animation/multi_touch_zoom_00039.jpg",
+			"img/zoom_animation/multi_touch_zoom_00040.jpg"
+		],function()
+			{
+				alert('Images Loaded');
+			}); */
+		</script>
+		
+		
     </body>
 </html>
