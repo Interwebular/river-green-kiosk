@@ -36,6 +36,7 @@
 	function zoom_out( callback ) {
 	
 		if( zoom_parent.hasClass('zoomed_in') ) {
+		
 			images_out.each(function(i) {
 				var current = $(this);
 				animation_out = setTimeout(function() {

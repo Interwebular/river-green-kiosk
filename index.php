@@ -10,8 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
-				<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/nav.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -25,25 +27,44 @@
             <div id="logo-wrap"></div>
             <nav class="nav-left">
                 <ul>
-                    <li class="load-page" data-page="the-views" data-height="90"><span>check out</span>the views</li>
-                    <li class="load-page" data-page="amenities" data-height="200"><span>view the</span>amenities</li>
-                    <li class="load-page" data-page="the-suites" data-height="310"><span>see inside</span>the suites</li>
-                    <li class="load-page" data-page="community" data-height="420"><span>learn about</span>community</li>
-                    <li class="load-page" data-page="quick-facts" data-height="435"><span>view our</span>quick facts</li>
+                    <li class="load-page" data-page="the-views" data-height="90" data-margin="0" data-arrow="153"><span>check out</span>the views</li>
+                    <li class="load-page" data-page="amenities" data-height="200" data-margin="580" data-arrow="262"><span>view the</span>amenities</li>
+                    <li class="load-page" data-page="the-suites" data-height="310" data-margin="1160" data-arrow="376"><span>see inside</span>the suites</li>
+                    <li class="load-page" data-page="community" data-height="420" data-margin="1740" data-arrow="490"><span>learn about</span>community</li>
+                    <li class="load-page" data-page="quick-facts" data-height="435" data-margin="2320" data-arrow="602"><span>view our</span>quick facts</li>
                 </ul>
             </nav>
             <div id="menu-toggle-left" class="menu-toggle"></div>
         </div>
 		
-        <div id="page-views-left" class="page-wrap-left">
-            
-						<span class="left-arrow arrows"></span>
-            <span class="close-pages left">X</span>
-            <div id="loaded-page-content-left">
-								<?php require(__DIR__.'/includes/page-sections-index.php'); ?>
+		<div id="left-arrow">
+			<img src="img/arrow_left.png" />
+		</div>
+			
+		<div id="page-content-container-left">
+			<div id="page-content-left">
+				<div id="page-content-left-inner">
+					<div id="page-content-left-animation">
+						<div class="page-content the-views-content">
+							<?php require('includes/pages/the-views.php');  ?>
 						</div>
-            
-        </div>
+						<div class="page-content amenities-content">
+							<?php require('includes/pages/amenities.php');  ?>
+						</div>
+						<div class="page-content the-suites-content">
+							<?php require('includes/pages/the-suites.php');  ?>
+						</div>
+						<div class="page-content community-content">
+							<?php require('includes/pages/community.php');  ?>
+						</div>
+						<div class="page-content quick-facts-content">
+							<?php require('includes/pages/quick-facts.php');  ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 				
 				
@@ -57,33 +78,7 @@
             
         </div>
 		
-				<!-- 
-        <div id="zoom-out" class="out">
-            <img src="img/map-zoom-out.jpg" id="map-img-zoomed-out" />
 
-
-        </div>
-				 -->
-				<!--
-				<div id="hotspots-in">
-						<div class="hotspot-wrap">
-								<h1>IN</h1>
-						</div>
-				</div>
-				<div id="hotspots-out">
-						<div class="hotspot-wrap">
-								<h1>OUT</h1>
-						</div>
-				</div> -->
-				
-				<!--
-            <div id="zo-hotspot-1" class="hotspot-dot">
-            <span class="border"></span>
-            <div class="hotspot-wrap">
-                <div id="hotspot-popup-1" class="hotspot-popup"></div>
-            </div>
-            </div> -->
-						
 						
 				<div id="zoom-parent">
 					 <img class="animation-image" id="default_image" src="img/zoom_animation/multi_touch_zoom_00000.jpg">
@@ -164,12 +159,14 @@
         <script src="js/vendor/jquery.panorama.js"></script>
 				<script src="js/animation.js"></script>
         <script src="js/main.js"></script>
-				
+		<script src="js/nav.js"></script>		
+		<script src="js/jquery.panorama_viewer.min.js"></script>		
+		<script src="js/jquery.panorama.js"></script>		
         <script>
             $(function(){
                 $("img.advancedpanorama").panorama({
-                     auto_start: 0,
-                    start_position: 1527
+                    auto_start: 0,
+                    start_position: 0
                     });
 
             });

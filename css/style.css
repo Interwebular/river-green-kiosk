@@ -130,7 +130,8 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 .panorama-viewport {
 	position: relative;
-	width: 600px;
+	width: 100% !important;
+	height: 100% !important;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;

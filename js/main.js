@@ -31,31 +31,30 @@
 
 
 
-		
+	
 	$( ".close-pages.left" ).on( "click", function() {
 		$( ".page-wrap-left" ).removeClass( 'open' );
 	});
 
 
 
-$( ".close-pages.right" ).on( "click", function() {
-  $( ".page-wrap-right" ).removeClass( 'open' );
-});
+	$( ".close-pages.right" ).on( "click", function() {
+	  $( ".page-wrap-right" ).removeClass( 'open' );
+	});
 
+	/*
+	$( "#menu-toggle-left" ).on( "click", function() {
+		$( ".nav-left" ).toggleClass( 'open' );
+	}); */
 
-$( "#menu-toggle-left" ).on( "click", function() {
-	$( ".page-wrap-left" ).removeClass( 'open' );
-	$( ".nav-left" ).toggleClass( 'open' );
-});
+	$( "#menu-toggle-right" ).on( "click", function() {
+	  $( ".nav-right" ).toggleClass( 'open' );
+	});
 
-$( "#menu-toggle-right" ).on( "click", function() {
-  $( ".nav-right" ).toggleClass( 'open' );
-});
-
-$( ".hotspot-dot" ).on( "click", function() {
-  $( this ).toggleClass( 'on' );	
-  $( ".hotspot-popup" ).toggleClass( 'on' );
-});
+	$( ".hotspot-dot" ).on( "click", function() {
+	  $( this ).toggleClass( 'on' );	
+	  $( ".hotspot-popup" ).toggleClass( 'on' );
+	});
 
 })( jQuery );
 
