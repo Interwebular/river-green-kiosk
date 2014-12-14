@@ -17,7 +17,7 @@ body {background: #444; margin:0; padding:0;}
 }
 
 #zoom-parent {
-	background: url('../img/zoom_animation/multi_touch_zoom_00000.jpg') 0 0 no-repeat;
+	background: url('../img/out-spots.jpg') -20px -20px no-repeat;
 	position: absolute;
 	width: 3800px;
 	height: 1040px;
@@ -51,15 +51,15 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 /*ZOOMED IN AND OUT CONTROLS*/
 #zoom-controls-wrapper {height:60px; width:280px; position: absolute; bottom:0; left:50%; margin:0 0 0 -140px; z-index:99999;}
-#zoom-controls {height: 60px; width: 160px; background: #999; position: relative; background: #282d2e;}
-#zoom-controls #zoom_out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769;}
+#zoom-controls {height: 60px; width: 160px; background: #999; position: relative; background: #282d2e; color: #fff; font-family: 'Gotham-Medium'; text-transform: uppercase; font-size:22px; text-align: center; line-height:3;}
+#zoom-controls #zoom_out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769; text-align: center; color: #fff; font-size: 52px; font-weight: lighter; line-height:1; font-family: arial; }
 	#zoom-controls #zoom_out.on {background: #1baf97;}
-#zoom-controls #zoom_in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769;}
+#zoom-controls #zoom_in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769; text-align: center; color: #fff; font-size: 52px; font-weight: 100; line-height:1.2; font-family: arial;}
 	#zoom-controls #zoom_in.on {background: #1baf97;}
 
 /*ZOOMED OUT HOT SPOTS*/
-.hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:2; background: red; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8);}
-.hotspot-dot .border {height:40px; width: 40px; z-index:2;  border:3px solid red; position: absolute; border-radius: 42px; top:-7px; left:-7px;}
+.hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:6; background: #1baf97; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8); opacity:1; transition: all 1s ease;}
+.hotspot-dot .border {height:40px; width: 40px; z-index:2;  border:3px solid #1baf97; position: absolute; border-radius: 42px; top:-7px; left:-7px;}
 .hotspot-dot.on .border{ animation: hotspot-on 1.2s infinite;}
 
 @keyframes hotspot-on {
@@ -68,16 +68,36 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 }}
 
 .hotspot-wrap {position: relative;}
-.hotspot-popup {opacity:0;height:460px; width:900px; position: absolute; top:-340px; left:120px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
+.hotspot-popup {opacity:0;height:460px; width:900px; position: absolute; top:-340px; left:120px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
 .hotspot-popup.on {height:460px; width:900px; opacity:1;}
 
 
-#zo-hotspot-1 {top:537px; left:1206px;}
+#zo-hotspot-1 {top:70px; left:1260px;}
+#zo-hotspot-2 {top:536px; left:1208px;}
+#zo-hotspot-3 {top:420px; left:1570px;}
+#zo-hotspot-4 {top:590px; left:1590px;}
+#zo-hotspot-5 {top:520px; left:1970px;}
+#zo-hotspot-6 {top:960px; left:1640px;}
 
-#hotspots-in {
-	display: none;
-}
+#zi-hotspot-1 {top:70px; left:1260px;}
+#zi-hotspot-2 {top:536px; left:1208px;}
+#zi-hotspot-3 {top:420px; left:1570px;}
+#zi-hotspot-4 {top:590px; left:1590px;}
+#zi-hotspot-5 {top:520px; left:1970px;}
+#zi-hotspot-6 {top:960px; left:1640px;}
 
+
+
+
+
+
+#hotspots-in .hotspot-dot {opacity:0;}
+#hotspots-in.delete-hotspots .hotspot-dot {opacity:0;}
+#hotspots-in.show-hotspots   .hotspot-dot {opacity:1;}
+
+#hotspots-out {}
+#hotspots-out.delete-hotspots .hotspot-dot {opacity:0;}
+#hotspots-out.show-hotspots   .hotspot-dot {opacity:1;}
 
 /*PAGES*/
 .page-wrap-left {  height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
