@@ -2,7 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,18 +67,26 @@
 			</div>
 		</div>
 		
+		<!--
+        <div id="page-views-left" class="page-wrap-left">
+            
+			<span class="left-arrow arrows"></span>
+            <span class="close-pages left">X</span>
+            <div id="loaded-page-content-left">
+				<?php require(__DIR__.'/includes/page-sections-index.php'); ?>
+			</div>
+            
+        </div> -->
+
 
 				
-				
+				<!--
          <div id="page-views-right" class="page-wrap-right">
-            
             <span class="right-arrow arrows"></span>
             <span class="close-pages right">X</span>
-            <div id="loaded-page-content-right">
-								
-						</div>
-            
-        </div>
+            <div id="loaded-page-content-right"></div>
+        </div> -->
+
 		
 
 						
@@ -124,9 +134,108 @@
 					 <img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00040.jpg">
 				</div> 
 
-				
-				
+		<div id="hotspots-in">
+			<div class="hotspot-wrap">
 
+			<div id="zi-hotspot-1" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+			
+
+			<div id="zi-hotspot-2" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zi-hotspot-3" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zi-hotspot-4" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zi-hotspot-5" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zi-hotspot-6" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+			</div> <!-- hotspot wrap -->
+		</div> <!-- hotspot in -->
+
+
+
+
+
+		<div id="hotspots-out">
+			<div class="hotspot-wrap">
+				
+			<div id="zo-hotspot-1" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+			
+
+			<div id="zo-hotspot-2" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zo-hotspot-3" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zo-hotspot-4" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zo-hotspot-5" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+	        <div id="zo-hotspot-6" class="hotspot-dot">
+	        	<span class="border"></span>
+	        	<div class="hotspot-wrap">
+	           		<div id="hotspot-popup-1" class="hotspot-popup"></div>
+	        	</div>
+	        </div>
+
+
+			</div> <!-- hotspot wrap -->
+		</div>  <!-- hotspots-in -->
+		
 
 
          <div id="right-nav-wrap">
@@ -145,7 +254,7 @@
         
         <div id="zoom-controls-wrapper">
             <div id="zoom-controls">
-                <div id="zoom_out">-</div>
+                <div id="zoom_out" class="on">-</div>
                 ZOOM
                 <div id="zoom_in">+</div>
             </div>

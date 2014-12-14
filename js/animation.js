@@ -21,7 +21,7 @@
 			   $('.animation-image').hide();
 			   current.show();
 			   current_frame = i;
-			   console.log( current_frame );
+			   // console.log( current_frame );
 			   
 			   if (i == total_images - 1 ) {
 				 if( callback ) { callback(); } 
@@ -43,7 +43,7 @@
 					$('.animation-image').hide();
 					current.show();
 					current_frame = i;
-					console.log( current_frame );
+					// console.log( current_frame );
 					
 					 if (i == total_images - 1 ) {
 					   if( callback ) { callback(); } 
@@ -58,22 +58,34 @@
 
 	
    $('#zoom_in').click(function(e){
+
+	  $("#hotspots-out").removeClass("delete-hotspots");
+	  $("#hotspots-out").removeClass("show-hotspots");
+
+	  $("#hotspots-out").addClass("delete-hotspots");
+
 	  
-	  $("#hotspots-out").hide();
+	  console.log("delete-hotspots");
 	  
 	  zoom_in(function(){
-		 $("#hotspots-in").show();
-	  });
+		 $("#hotspots-in").addClass("show-hotspots");
+		 console.log("show-hotspots");
+	  }); 
 	  e.preventDefault();
    });
 	
 	
    $('#zoom_out').click(function(e){
 	  
-	  $("#hotspots-in").hide();
+	 $("#hotspots-in").removeClass("delete-hotspots");
+	  $("#hotspots-in").removeClass("show-hotspots");
+	   
+	  $("#hotspots-in").addClass("delete-hotspots");
+	  console.log("delete-hotspots");
 	  
 	  zoom_out(function(){
-		 $("#hotspots-out").show();	 
+		 $("#hotspots-out").addClass('show-hotspots');	
+		 console.log("show-hotspots"); 
 	  });
 	  e.preventDefault();
    });	
