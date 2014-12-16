@@ -16,6 +16,7 @@
     </head>
     <body>
 		<div id="viewport-container">
+		<div id="frame"></div>
 			<div id="left-nav-wrap">
 				<div id="logo-wrap"></div>
 				<nav class="nav-left">

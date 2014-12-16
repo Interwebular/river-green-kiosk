@@ -1,10 +1,12 @@
-body {background: #444; margin:0; padding:0;}
+	body {background: #444; margin:0; padding:0;}
 
 #viewport-container {
 	position: relative;
-	border:20px solid #e1dfdc;
-	width: 3800px;
-	height: 1040px;
+	width: 3840px;
+	height: 1080px;
+}
+#frame {
+	height:1080px; width:3840px; background: url(../img/frame.png) no-repeat top left; position: absolute; top:0; left:0; z-index:2;
 }
 
 .page-section {
@@ -17,10 +19,10 @@ body {background: #444; margin:0; padding:0;}
 }
 
 #zoom-parent {
-	background: url('../img/out-spots.jpg') -20px -20px no-repeat;
+	background: url('../img/out-spots.jpg') 0px 0px no-repeat;
 	position: absolute;
-	width: 3800px;
-	height: 1040px;
+	width: 3840px;
+	height: 1080px;
 	overflow: hidden;
 	z-index:1;
 }
@@ -57,46 +59,76 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 #zoom-controls #zoom_in  {height: 60px; width:60px; position: absolute; top: 0; right:-60px; background: #5f6769; text-align: center; color: #fff; font-size: 52px; font-weight: 100; line-height:1.2; font-family: arial;}
 	#zoom-controls #zoom_in.on {background: #1baf97;}
 
+
+
 /*ZOOMED OUT HOT SPOTS*/
 .hotspot-dot {height:32px; width:32px; margin:0px; position: absolute; z-index:6; background: #1baf97; display: block; border-radius: 30px; box-shadow:1px 3px 10px rgba(000,000,000,0.8); opacity:1; transition: all 1s ease;}
 .hotspot-dot .border {height:40px; width: 40px; z-index:2;  border:3px solid #1baf97; position: absolute; border-radius: 42px; top:-7px; left:-7px;}
-.hotspot-dot.on .border{ animation: hotspot-on 1.2s infinite;}
+.hotspot-dot.on .border{ -webkit-animation: hotspot-on 1.5s infinite;}
 
-@keyframes hotspot-on {
+@-webkit-keyframes hotspot-on {
 0% {border-width:3px;}
-100% {border-width: 6px; opacity:0; top:-10px; left:-10px;
+100% {border-width: 6px; opacity:0; top:-9px; left:-9px;
 }}
 
+
 .hotspot-wrap {position: relative;}
-.hotspot-popup {opacity:0;height:460px; width:900px; position: absolute; top:-340px; left:120px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
-.hotspot-popup.on {height:460px; width:900px; opacity:1;}
-
-
-#zo-hotspot-1 {top:70px; left:1260px;}
-#zo-hotspot-2 {top:536px; left:1208px;}
-#zo-hotspot-3 {top:420px; left:1570px;}
-#zo-hotspot-4 {top:590px; left:1590px;}
-#zo-hotspot-5 {top:520px; left:1970px;}
-#zo-hotspot-6 {top:960px; left:1640px;}
-
-#zi-hotspot-1 {top:70px; left:1260px;}
-#zi-hotspot-2 {top:536px; left:1208px;}
-#zi-hotspot-3 {top:420px; left:1570px;}
-#zi-hotspot-4 {top:590px; left:1590px;}
-#zi-hotspot-5 {top:520px; left:1970px;}
-#zi-hotspot-6 {top:960px; left:1640px;}
+#hotspots-in .hotspot-popup {opacity:0;height:460px; width:900px; position: absolute;  z-index:9; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
+#hotspots-in .hotspot-popup.on {height:460px; width:900px; opacity:1; position: absolute; z-index:9;}
 
 
 
+#hotspots-out .hotspot-popup {opacity:0; height:30px; width: auto; white-space: nowrap; padding: 4px 20px 0 20px; position: absolute;  z-index:9; top:-50px; left:-40px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
+#hotspots-out .hotspot-dot.on .hotspot-popup {height:30px; width: auto; opacity:1; position: absolute; z-index:9;}
 
 
+#zo-hotspot-1 {top:92px;  left:1282px;}
+#zo-hotspot-2 {top:560px; left:1226px;}
+#zo-hotspot-3 {top:446px; left:1594px;}
+#zo-hotspot-4 {top:614px; left:1610px;}
+#zo-hotspot-5 {top:558px; left:1988px;}
+#zo-hotspot-6 {top:994px; left:1690px;}
+#zo-hotspot-7 {top:394px; left:2066px;}
+#zo-hotspot-8 {top:428px; left:2232px;}
+#zo-hotspot-9 {top:890px; left:2406px;}
+#zo-hotspot-10 {top:876px; left:2700px;}
+#zo-hotspot-11 {top:335px; left:2700px;}
+#zo-hotspot-12 {top:396px; left:2800px;}
+#zo-hotspot-13 {top:810px; left:2854px;}
+
+#zi-hotspot-1 {top:674px;  left:1180px;}
+#hotspot-popup-1 {top:170px;  left:910px;}
+
+#zi-hotspot-2 {top:476px; left:1240px;}
+#hotspot-popup-2 {top:170px;  left:1320px;}
+
+#zi-hotspot-3 {top:446px; left:1592px;}
+#hotspot-popup-3 {top:180px;  left:1674px;}
+
+/*#zi-hotspot-4 {top:960px; left:1646px;}
+#hotspot-popup-4 {}*/
+
+#zi-hotspot-5 {top:686px; left:1966px;}
+#hotspot-popup-5 {top:400px;  left:2042px;}
+
+#zi-hotspot-6 {top:460px; left:2126px;}
+#hotspot-popup-6 {top:200px;  left:2202px;}
+
+#zi-hotspot-7 {top:330px; left:2246px;}
+#hotspot-popup-7 {top:100px;  left:2312px;}
+
+#zi-hotspot-8 {top:398px; left:2546px;}
+#hotspot-popup-8 {top:100px;  left:2612px;}
+
+#zi-hotspot-9 {top:204px; left:2860px;}
+#hotspot-popup-9 {top:280px;  left:2712px;}
 
 #hotspots-in .hotspot-dot {opacity:0;}
-#hotspots-in.delete-hotspots .hotspot-dot {opacity:0;}
+#hotspots-in.delete-hotspots .hotspot-dot {opacity:0; pointer-events: none;}
 #hotspots-in.show-hotspots   .hotspot-dot {opacity:1;}
 
 #hotspots-out {}
-#hotspots-out.delete-hotspots .hotspot-dot {opacity:0;}
+#hotspots-out.delete-hotspots .hotspot-dot {opacity:0; pointer-events: none;}
 #hotspots-out.show-hotspots   .hotspot-dot {opacity:1;}
 
 /*PAGES*/

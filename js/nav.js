@@ -144,15 +144,11 @@
 				$this.addClass( 'opened' );
 			}	
 
+			
 		}
-		
 		
 	});
 	
-
-
-
-
 
 	$('.switch-floor').click(function(e){
 		
@@ -171,9 +167,6 @@
 			});
 			
 		}
-		
-		
-		
 		e.preventDefault();
 	});
 
