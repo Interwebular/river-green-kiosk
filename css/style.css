@@ -42,7 +42,7 @@ nav ul {padding:0; margin:0;}
 nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6; position: relative;  font-family: 'Gotham-Bold'; text-shadow: 0px -1px #000; letter-spacing: 2px;}
 nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transform: lowercase;  font-family: 'Didot-HTF-L11-Light-Ital'; text-shadow: 0px -1px #000; font-size:18px; color: #d3d3d3; line-height: 1;}
 
-.menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/menu-toggle.jpg) no-repeat top left; }
+.menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/button_bg.png) no-repeat top left; }
 
 
 

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/slick.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -91,18 +92,10 @@
 	
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
         <script src="js/vendor/jquery.panorama.js"></script>
+		<script src="js/jquery.panorama.js"></script>
+		<script src="js/slick.min.js"></script>	
 		<script src="js/animation.js"></script>
         <script src="js/main.js"></script>
-		<script src="js/nav.js"></script>		
-		<script src="js/jquery.panorama_viewer.min.js"></script>		
-		<script src="js/jquery.panorama.js"></script>		
-        <script>
-            $(function(){
-                $("img.advancedpanorama").panorama({
-					auto_start: 0,
-                    start_position: 0
-                });
-            });
-        </script>
+		<script src="js/nav.js"></script>
     </body>
 </html>
