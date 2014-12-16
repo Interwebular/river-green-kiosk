@@ -132,18 +132,11 @@
 			}
 			else {
 				$( ".nav-left" ).addClass( 'open' );
-			}
-				
-		
+			}	
 		}
-		
 		
 	});
 	
-
-
-
-
 
 	$('.switch-floor').click(function(e){
 		
@@ -162,9 +155,6 @@
 			});
 			
 		}
-		
-		
-		
 		e.preventDefault();
 	});
 

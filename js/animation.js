@@ -51,12 +51,9 @@
 				}, i * frame_rate); 
 			});
 			zoom_parent.removeClass('zoomed_in');
-		}
-		
+		}		
 	}
-	
 
-	
    $('#zoom_in').click(function(e){
 
 	  $("#hotspots-out").removeClass("delete-hotspots");
