@@ -102,6 +102,7 @@
 		
 		if( container_left.hasClass('is_open') ) {
 			$('.page-content').fadeOut();
+			
 			$('#left-arrow img').animate({
 				left: 30
 			}, {
@@ -121,6 +122,7 @@
 						complete: function() {
 							$( ".nav-left" ).removeClass( 'open' );
 							container_left.removeClass('is_open');
+							$this.removeClass( 'opened' );
 						}
 					});
 				}
@@ -133,8 +135,15 @@
 			else {
 				$( ".nav-left" ).addClass( 'open' );
 			}
-				
-		
+			
+			
+			if( $this.hasClass( 'opened' ) ) {
+				 $this.removeClass( 'opened' );
+			}
+			else {
+				$this.addClass( 'opened' );
+			}	
+
 		}
 		
 		
@@ -168,6 +177,47 @@
 		e.preventDefault();
 	});
 
+	
+	
+
+	
+    $(function(){
+        $("img.advancedpanorama").panorama({
+			auto_start: 0,
+            start_position: 0
+        });		
+		
+		$('.amenities-carousel-images').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			focusOnSelect: true,
+			asNavFor: '.amenities-carousel-content'
+		});		
+				
+		$('.amenities-carousel-content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,				
+			arrows: false,
+			asNavFor: '.amenities-carousel-images'	
+		});	
+
+		
+		$('.suites-carousel-images').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			focusOnSelect: true,
+			asNavFor: '.suites-carousel-content'
+		});		
+				
+		$('.suites-carousel-content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,				
+			arrows: false,
+			asNavFor: '.suites-carousel-images'			
+		});			
+    });
+	
+	
 
 
 })( jQuery );
