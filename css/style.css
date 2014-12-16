@@ -74,9 +74,14 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 .hotspot-wrap {position: relative;}
 #hotspots-in .hotspot-popup {opacity:0;height:460px; width:900px; position: absolute;  z-index:9; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
+	.hotspot-popup img {height:460px; width:540px; float: left;}
+	.hotspot-popup .content {height:460px; width:320px; float: left;}
+	.hotspot-popup .close {}
+	.hotspot-popup h1 {}
+	.hotspot-popup h2 {}
+	.hotspot-popup p  {}
+
 #hotspots-in .hotspot-popup.on {height:460px; width:900px; opacity:1; position: absolute; z-index:9;}
-
-
 
 #hotspots-out .hotspot-popup {opacity:0; height:30px; width: auto; white-space: nowrap; padding: 4px 20px 0 20px; position: absolute;  z-index:9; top:-50px; left:-40px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
 #hotspots-out .hotspot-dot.on .hotspot-popup {height:30px; width: auto; opacity:1; position: absolute; z-index:9;}
