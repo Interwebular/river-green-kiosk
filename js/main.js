@@ -98,7 +98,9 @@
 	  $( "#hotspot-popup-9" ).toggleClass( 'on' );
 	});
 
-
+	$( ".close" ).on( "click", function() {
+	  alert("just close me and turn off my hotspot");
+	});
 
 
 	$( "#zoom_out" ).on( "click", function() {
