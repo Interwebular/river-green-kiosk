@@ -21,8 +21,8 @@
 	
 
 	  <div class="right-col">
+		  <a class="close-menu-content close-left-menu-button"></a>
 		  <div class="carousel-content facts-carousel-content">
-				<a class="close-menu-content"></a>
 				<div>
 					<h1>LIVING ROOM</h1>
 					<h2>sub title</h2>

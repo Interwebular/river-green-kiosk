@@ -8,6 +8,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
 .cloud.slowest_speed {
     opacity: 0.4;
 }
@@ -17,6 +18,6 @@
 .cloud.fastest_speed {
     opacity: 0.8;
 }
-.viewport-container{
+#viewport-container{
     overflow: hidden;
 }

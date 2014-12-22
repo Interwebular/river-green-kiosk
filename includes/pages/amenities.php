@@ -27,7 +27,7 @@
 	
 	
     <div class="right-col">
-    	<div class="close-menu-content"></div>
+    	<a class="close-menu-content close-left-menu-button"></a>
 		<div class="carousel-content amenities-carousel-content">
 			<div>
 				<h1>POOL &amp; SPA</h1>

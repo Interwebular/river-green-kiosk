@@ -2,7 +2,7 @@
 
 #page-content-container-left {
 	position: absolute;
-	left: 190px;
+	left: 210px;
 	/* width: 1140px; */
 	width: 0;
 	height: 600px;
@@ -17,7 +17,7 @@
 	width: 30px;
 	position: absolute;
 	z-index: 50;
-	left: 160px;
+	left: 180px;
 	top: 250px;
 }
 
@@ -264,9 +264,9 @@
 	}
 
 
-.close-menu-content {height: 40px; width:40px; position: absolute; top:0px; right:0px; background: url(../img/close.gif) no-repeat top right;}
+.close-menu-content {height: 40px; width:40px; position: absolute; top:0px; right:0px; background: url(../img/close.gif) no-repeat top right; z-index: 51;}
 	
-.close-menu-content-white {height: 40px; width: 40px; top:20px; right: 20px; position: absolute; z-index: 10000; background: url(../img/close-white.gif) no-repeat top left; }
+.close-menu-content-white {height: 40px; width: 40px; top:20px; right: 20px; position: absolute; background: url(../img/close-white.gif) no-repeat top left;z-index: 51; }
 	
 	
 	

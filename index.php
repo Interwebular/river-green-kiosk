@@ -86,9 +86,9 @@
 			
 			<div id="zoom-controls-wrapper">
 				<div id="zoom-controls">
-					<div id="zoom_out" class="on">-</div>
+					<div id="zoom_out" class="on clouds_out">-</div>
 					ZOOM
-					<div id="zoom_in">+</div>
+					<div id="zoom_in" class="clouds_in">+</div>
 				</div>
 			</div>
 		</div> <!-- /viewport-container  -->
@@ -99,9 +99,10 @@
 		<script src="js/jquery.panorama.js"></script>
 		<script src="js/slick.min.js"></script>	
 		<script src="js/animation.js"></script>
+		<script src="js/clouds.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/nav.js"></script>
-		<script src="js/clouds.js"></script>
+
 
     </body>
 </html>

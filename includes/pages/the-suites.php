@@ -1,5 +1,5 @@
 
-  <div class="container-row">
+<div class="container-row">
     <div class="left-col">
 		<div class="carousel-container">
 			<div class="carousel-images suites-carousel-images">
@@ -21,8 +21,8 @@
 	
 	
     <div class="right-col">
+		<a class="close-menu-content close-left-menu-button"></a>
 		<div class="carousel-content suites-carousel-content">
-			<div class="close-menu-content"></div>
 			<div>
 				<h1>LIVING ROOM</h1>
 				<h2>sub title</h2>
@@ -45,4 +45,4 @@
 			</div>				
 		</div>
     </div>
-  </div>
+</div>

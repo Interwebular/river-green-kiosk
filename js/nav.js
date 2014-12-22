@@ -235,7 +235,35 @@
 
     });
 	
-	
+
+
+	$('.close-left-menu-button').click( function(e ){
+		$('.page-content').fadeOut();
+		$('.panorama_menu_bg').fadeOut();
+		$('.panorama_menu_items').fadeOut();
+		$('#left-arrow img').animate({
+			left: 30
+		}, {
+			duration: 500,
+			specialEasing: {
+				width: "swing"
+			},
+			complete: function() {
+				$('#left-arrow img').hide();
+				container_left.animate({
+					width: 0
+				}, {
+					duration: 500,
+					specialEasing: {
+						width: "swing"
+					},
+					complete: function() {
+						container_left.removeClass('is_open');
+					}
+				});
+			}
+		});
+	});
 
 
 })( jQuery );

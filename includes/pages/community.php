@@ -26,8 +26,8 @@
 	
 	
     <div class="right-col">
+		<a class="close-menu-content close-left-menu-button"></a>
 		<div class="carousel-content community-carousel-content">
-			<a class="close-menu-content"></a>
 			<div>
 				<h1>POOL &amp; SPA</h1>
 				<h2>sub title</h2>
