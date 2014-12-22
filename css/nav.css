@@ -59,6 +59,7 @@
 		margin-bottom: 20px;
 		width: 100%;
 		display: none;
+		position: relative;
 	}
 	
 
@@ -223,15 +224,23 @@
 			font-weight: 100;
 			text-align: center;
 			margin: 5px 20px 0 20px;
-			padding: 0;
+			padding: 0 60px 0 60px;
+			font-size:32px;
 			font-family: 'Didot-HTF-L11-Light-Ital';
+			position: relative;
+			display: block;
+			text-align: center;
 		}
 
+		.carousel-content h2:before {content:""; display: inline-block; background: url(../img/title-line-left.gif) no-repeat left -6px; height:15px; width:47px;}
+		.carousel-content h2:after {content:"";  display: inline-block; height:15px; width:47px; padding:0 0 0 9px; background: url(../img/title-line-left.gif) no-repeat right -6px; }
+
 		.container-row .right-col .carousel-content p {
-			width: 70%;
+			width: 90%;
 			text-align: center;
 			margin: 30px auto;
 			padding: 0;
+			line-height:1.6;
 		} 
 		
 	.clear {
@@ -252,9 +261,11 @@
 	.menu-toggle.opened {
 		background: url( ../img/button_opened.png ) top center no-repeat;
 	}
+
+
+.close-menu-content {height: 40px; width:40px; position: absolute; top:0px; right:0px; background: url(../img/close.gif) no-repeat top right;}
 	
-	
-	
+.close-menu-content-white {height: 40px; width: 40px; top:20px; right: 20px; position: absolute; z-index: 10000; background: url(../img/close-white.gif) no-repeat top left; }
 	
 	
 	

@@ -1,5 +1,6 @@
 
 
+<div class="close-menu-content-white"></div>
 <div class="panorama_menu_items">
 	
 	<div class="title">choose a floor</div>

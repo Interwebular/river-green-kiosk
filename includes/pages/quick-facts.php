@@ -21,6 +21,7 @@
 	
 	
     <div class="right-col">
+    	<div class="close-menu-content"></div>
 		<div class="carousel-content suites-carousel-content">
 			<div>
 				<h1>LIVING ROOM</h1>

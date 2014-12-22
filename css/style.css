@@ -68,7 +68,7 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 
 @-webkit-keyframes hotspot-on {
 0% {border-width:3px;}
-100% {border-width: 6px; opacity:0; top:-9px; left:-9px;
+100% {border-width: 3px; opacity:0;
 }}
 
 
