@@ -30,7 +30,7 @@
 
 
 	 /*BOTH LEFT AND RIGHT NAVIGATION*/
-#left-nav-wrap {height:900px; width:200px; margin:90px 0 0 -20px; float: left; position: relative; overflow: hidden; z-index:10;}
+#left-nav-wrap {height:900px; width:200px; margin:90px 0 0 0px; float: left; position: relative; overflow: hidden; z-index:10;}
 #right-nav-wrap {height:900px; width:200px; margin:90px -20px 0 0px; float: right; position: relative; overflow: hidden; z-index:10;}
 
 
