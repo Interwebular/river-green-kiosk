@@ -2,7 +2,7 @@
 	<div class="hotspot-wrap-outer">
 		<div id="zo-hotspot-1" class="hotspot-dot">
 			<span class="border"></span>
-			<div id="" class="hotspot-popup"></div>
+			<div id="" class="hotspot-popup">this is the first hotspot</div>
 		</div>
 		
 
