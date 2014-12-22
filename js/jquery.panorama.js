@@ -145,7 +145,5 @@
 		
 	};
 
-$(document).ready(function(){
-	$("img.panorama").panorama();
-});
+	
 })(jQuery);

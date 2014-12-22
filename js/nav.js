@@ -27,6 +27,7 @@
 			else {
 				$('.panorama_menu_bg').fadeOut(100);
 				$('.panorama_menu_items').fadeOut(100);
+				$("img.advancedpanorama").stop();
 			}
 				
 				
@@ -77,7 +78,6 @@
 					if ( page === 'the-views' ) {
 						$('.panorama_menu_bg').fadeIn(100);
 						$('.panorama_menu_items').fadeIn(100);
-						
 					}
 						
 						
@@ -102,7 +102,8 @@
 		
 		if( container_left.hasClass('is_open') ) {
 			$('.page-content').fadeOut();
-			
+			$('.panorama_menu_bg').fadeOut();
+			$('.panorama_menu_items').fadeOut();
 			$('#left-arrow img').animate({
 				left: 30
 			}, {
@@ -174,6 +175,22 @@
 	
 
 	
+	function open_menu( side ) {
+		var side = side;
+		
+		
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
     $(function(){
         $("img.advancedpanorama").panorama({
 			auto_start: 0,
@@ -181,33 +198,41 @@
         });		
 		
 		$('.amenities-carousel-images').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			focusOnSelect: true,
 			asNavFor: '.amenities-carousel-content'
-		});		
+		}).click();		
 				
-		$('.amenities-carousel-content').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,				
+		$('.amenities-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.amenities-carousel-images'	
-		});	
+		}).click();	
 
 		
 		$('.suites-carousel-images').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			focusOnSelect: true,
 			asNavFor: '.suites-carousel-content'
-		});		
+		}).click();		
 				
-		$('.suites-carousel-content').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,				
+		$('.suites-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.suites-carousel-images'			
-		});			
+		}).click();	
+
+		$('.community-carousel-images').slick({
+			asNavFor: '.community-carousel-content'
+		}).click();		
+				
+		$('.community-carousel-content').slick({		
+			arrows: false,
+			asNavFor: '.community-carousel-images'			
+		}).click();	
+		$('.facts-carousel-images').slick({
+			asNavFor: '.facts-carousel-content'
+		}).click();		
+				
+		$('.facts-carousel-content').slick({		
+			arrows: false,
+			asNavFor: '.facts-carousel-images'			
+		}).click();			
+
     });
 	
 	

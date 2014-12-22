@@ -12,10 +12,13 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/clouds.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 		<div id="viewport-container">
+		<?php require('includes/clouds.php'); ?>
+
 		<div id="frame"></div>
 			<div id="left-nav-wrap">
 				<div id="logo-wrap"></div>
@@ -92,10 +95,13 @@
 	
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
         <script src="js/vendor/jquery.panorama.js"></script>
+		<script src="js/dotimeout.js"></script>
 		<script src="js/jquery.panorama.js"></script>
 		<script src="js/slick.min.js"></script>	
 		<script src="js/animation.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/nav.js"></script>
+		<script src="js/clouds.js"></script>
+
     </body>
 </html>

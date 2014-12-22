@@ -1,0 +1,22 @@
+
+
+.cloud {
+    position: absolute;
+    z-index: 49;
+    display: none;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cloud.slowest_speed {
+    opacity: 0.4;
+}
+.cloud.medium_speed {
+    opacity: 0.6;
+}
+.cloud.fastest_speed {
+    opacity: 0.8;
+}
+.viewport-container{
+    overflow: hidden;
+}

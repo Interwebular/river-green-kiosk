@@ -229,10 +229,11 @@
 
 		.container-row .right-col .carousel-content p {
 			width: 70%;
-			text-align: center;
 			margin: 30px auto;
+			text-align: center;
 			padding: 0;
 		} 
+
 		
 	.clear {
 		clear: both;
