@@ -27,7 +27,6 @@
 			else {
 				$('.panorama_menu_bg').fadeOut(100);
 				$('.panorama_menu_items').fadeOut(100);
-				$("img.advancedpanorama").stop();
 			}
 				
 				

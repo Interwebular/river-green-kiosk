@@ -67,28 +67,13 @@
         selector.removeClass('fastest_speed');
     }
 
-
-
-
-
-
-
-
-
     $(function(){
         generateClouds();
     });
 
     $('.clouds_in').click(function(){
         clouds.stop();
-        clouds.animate({
-            width: 4000
-        }, {
-            duration: 1000,
-            complete: function() {
-                clouds.fadeOut();
-            }
-        });
+        clouds.fadeOut();
 
     });
 

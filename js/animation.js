@@ -46,7 +46,7 @@
 					// console.log( current_frame );
 					
 					 if (i == total_images - 1 ) {
-					   if( callback ) { callback(); } 
+					   if( callback && typeof( callback ) == 'function') { callback(); }
 					 }
 				}, i * frame_rate); 
 			});
@@ -54,37 +54,34 @@
 		}		
 	}
 
-   $('#zoom_in').click(function(e){
+   	$('#zoom_in').click(function(e){
 
-	  $("#hotspots-out").removeClass("delete-hotspots");
-	  $("#hotspots-out").removeClass("show-hotspots");
+		//$("#hotspots-out").addClass("delete-hotspots").removeClass("show-hotspots");
 
-	  $("#hotspots-out").addClass("delete-hotspots");
+		$("#hotspots-out").hide();
 
-	  
-	  console.log("delete-hotspots");
-	  
-	  zoom_in(function(){
-		 $("#hotspots-in").addClass("show-hotspots");
-		 console.log("show-hotspots");
-	  }); 
-	  e.preventDefault();
-   });
-	
+	  	zoom_in(function(){
+		 	$("#hotspots-in").addClass("show-hotspots");
+	  	});
+
+		e.preventDefault();
+   	});
+
 	
    $('#zoom_out').click(function(e){
-	  
-	 $("#hotspots-in").removeClass("delete-hotspots");
-	  $("#hotspots-in").removeClass("show-hotspots");
-	   
-	  $("#hotspots-in").addClass("delete-hotspots");
-	  console.log("delete-hotspots");
-	  
-	  zoom_out(function(){
-		 $("#hotspots-out").addClass('show-hotspots');	
-		 console.log("show-hotspots"); 
-	  });
-	  e.preventDefault();
+
+	   $("#hotspots-in").addClass("delete-hotspots").removeClass("show-hotspots");
+	   $(".hotspot-popup").removeClass('on');
+	   $(".hotspot-dot").removeClass('on');
+
+
+	  	zoom_out(function(){
+		 	//$("#hotspots-out").addClass('show-hotspots');
+			$("#hotspots-out").show();
+			$("#hotspots-in").removeClass("delete-hotspots");
+
+	 	});
+	  	e.preventDefault();
    });	
 
 })( jQuery );
