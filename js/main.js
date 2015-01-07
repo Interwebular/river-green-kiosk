@@ -117,3 +117,16 @@
 
 })( jQuery );
 
+
+/*
+
+$(document).ready(function(){
+
+
+
+	$('.right-col').resize();
+
+	
+
+	
+}); */

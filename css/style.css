@@ -288,9 +288,9 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 }
 
 
-
-
-
+.right-col .slick-slide {
+	width: 418px !important;
+}
 
 
 
