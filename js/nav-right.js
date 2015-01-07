@@ -1,9 +1,10 @@
+
 (function( $ ){
 
-	var container_left = $('#page-content-container-left');
-	var container_animation_left = $('#page-content-left-animation');
+	var container_right = $('#page-content-container-right');
+	var container_animation_right = $('#page-content-right-animation');
 
-	$( '.load-page-left' ).click(function( event ){
+	$( '.load-page-right' ).click(function( event ){
 	
 		var $this = $(this);
 		var page = $this.data('page');
@@ -12,10 +13,10 @@
 		var margin = $this.data('margin');
 		var container_open = $('.is_open');
 		
-		if( container_left.hasClass('is_open') ) {
+		if( container_right.hasClass('is_open') ) {
 		
 			container_open.css( 'top' , height );
-			$('#left-arrow img').css( 'top' , arrow_height );
+			$('#right-arrow img').css( 'top' , arrow_height );
 			
 			
 			/**** ANIMATE views menu */
@@ -184,7 +185,7 @@
 			asNavFor: '.amenities-carousel-content'
 		});	
 				
-		$('.amenities-carousel-content').slick({
+		$('.amenities-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.amenities-carousel-images',
 			variableWidth: true
@@ -195,7 +196,7 @@
 			asNavFor: '.suites-carousel-content'
 		});	
 				
-		$('.suites-carousel-content').slick({
+		$('.suites-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.suites-carousel-images',
 			variableWidth: true			
@@ -205,7 +206,7 @@
 			asNavFor: '.community-carousel-content'
 		});	
 				
-		$('.community-carousel-content').slick({
+		$('.community-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.community-carousel-images',
 			variableWidth: true			
@@ -214,7 +215,7 @@
 			asNavFor: '.facts-carousel-content'
 		});		
 				
-		$('.facts-carousel-content').slick({
+		$('.facts-carousel-content').slick({		
 			arrows: false,
 			asNavFor: '.facts-carousel-images',
 			variableWidth: true
