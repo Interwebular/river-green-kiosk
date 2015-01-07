@@ -8,10 +8,9 @@
         <div class="content">
             <i class="fa fa-camera-retro fa-lg"></i>
             <div class="close"></div>
-
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>1 RIVER GREEN</h1>
+            <h2>unrivalled luxury</h2>
+            <p>6 Towers / 2 Amenity Buildings / 458 Residences</br> Architect James K.M. Cheng Inc. / Interior Design by Trepp Design Inc.</br>Completed in 2013 </br> Now ready for move in
             </p>
         </div>
     </div>
@@ -22,9 +21,9 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>RIVER GREEN</h1>
+            <h2>art display</h2>
+            <p>River Green Art pieces are on showcase throughout the River Green Community. These art installations symbolize local culture &amp; heritage and enhance the natural beauty of the area.
             </p>
         </div>
     </div>
@@ -34,9 +33,9 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>RIVERSIDE</h1>
+            <h2>trails</h2>
+            <p>Along the Fraser River’s coastline are the updated riverside trails, inviting residents to spend time exercising, walking or simply enjoying the views.
             </p>
         </div>
     </div>
@@ -49,9 +48,9 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>RICHMOND</h1>
+            <h2>olympic oval</h2>
+            <p>The River Green Community offers residents a world-class sporting facility — the Richmond Olympic Oval, Vancouver’s most extensive state of the art sports venue.
             </p>
         </div>
     </div>
@@ -61,9 +60,9 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>PRESENTATION</h1>
+            <h2>centre</h2>
+            <p>Designed by the acclaimed architect James K.M. Cheng, this three storey, $9-million architectural marvel showcases the expansive River Green Community.
             </p>
         </div>
     </div>
@@ -73,9 +72,9 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>FLOATING PIER</h1>
+            <h2>and dock</h2>
+            <p>A contemporary designed pier is connected to a floating dock that allows temporary mooring of boats and leisure crafts.
             </p>
         </div>
     </div>
@@ -85,24 +84,13 @@
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
             <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
+            <h1>2 RIVER GREEN</h1>
+            <h2>signature waterfront</h2>
+            <p>2 Towers / 1 Amenity Building / 171 Suites </br> Architect IBI Group Inc.</br>Interior Design by Trepp Design Inc.
             </p>
         </div>
     </div>
 
-    <div id="zi-hotspot-9" class="hotspot-dot"><span class="border"></span></div>
-    <div id="hotspot-popup-9" class="hotspot-popup">
-        <img src="img/zoomed-in/hotspot-img.jpg" />
-        <div class="content">
-            <div class="close"></div>
-            <h1>Water Gardens</h1>
-            <h2>tranquil retreat</h2>
-            <p>Capturing the essence of the river’s current and surrounding vegetation, the use of native plants and the water garden blurs the line of nature and man-made beauty. The experiential sight and sound of water flowing over the stones while enveloped by lush surrounding landscape forms a spa oasis.
-            </p>
-        </div>
-    </div>
 
 	</div> <!-- hotspot wrap -->
 </div> <!-- hotspot in -->

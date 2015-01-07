@@ -4,16 +4,10 @@
 			<div class="carousel-container">
 				<div class="carousel-images facts-carousel-images">
 					<div class="image">
-						<img src="../img/suite/living-room.jpg" alt />
+						<img src="../img/quickfacts/qf_img_01.jpg" alt />
 					</div>
 					<div class="image">
-						<img src="../img/suite/kitchen.jpg" alt />
-					</div>
-					<div class="image">
-						<img src="../img/suite/bedroom.jpg" alt />
-					</div>
-					<div class="image">
-						<img src="../img/suite/bedroom.jpg" alt />
+						<img src="../img/quickfacts/qf_img_02.jpg" alt />
 					</div>
 				</div>
 			</div>
@@ -24,24 +18,26 @@
 		  <a class="close-menu-content close-left-menu-button"></a>
 		  <div class="carousel-content facts-carousel-content">
 				<div>
-					<h1>LIVING ROOM</h1>
-					<h2>sub title</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to m</p>
+					<h1>RIVER GREEN</h1>
+					<h2>quick facts</h2>
+					<p>38 kilometres of riverside trials</br>
+						27 acre community</br>
+						1.1 kilometres of waterfront</br>
+						5 Star Amenities</br>
+						Close to approximately 800 restaurants in Richmond</br>
+						6 different golf courses within a 15 minute drive</br>
+						Near 5 major shopping centres</p>
 				</div>
 				<div>
-					<h1>KITCHEN</h1>
-					<h2>sub title</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to m</p>
-				</div>
-				<div>
-					<h1>BED ROOM</h1>
-					<h2>sub title</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to m</p>
-				</div>
-				<div>
-					<h1>BED ROOM</h1>
-					<h2>sub title</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to m</p>
+					<h1>RIVER GREEN</h1>
+					<h2>quick facts</h2>
+					<p>38 kilometres of riverside trials</br>
+						27 acre community</br>
+						1.1 kilometres of waterfront</br>
+						5 Star Amenities</br>
+						Close to approximately 800 restaurants in Richmond</br>
+						6 different golf courses within a 15 minute drive</br>
+						Near 5 major shopping centres</p>
 				</div>
 		  </div>
 	  </div>

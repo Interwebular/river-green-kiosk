@@ -4,22 +4,31 @@
 		<div class="carousel-container">
 			<div class="carousel-images amenities-carousel-images">
 				<div class="image">
-					<img src="../img/amenities/pool-room.jpg" alt />
+					<img src="../img/amenities/pool_img.jpg" alt />
 				</div>
 				<div class="image">
-					<img src="../img/amenities/gym-room.jpg" alt />
+					<img src="../img/amenities/sauna_img.jpg" alt />
 				</div>
 				<div class="image">
-					<img src="../img/amenities/theatre-room.jpg" alt />
+					<img src="../img/amenities/gym_img.jpg" alt />
 				</div>		
 				<div class="image">
-					<img src="../img/amenities/golf-room.jpg" alt />
+					<img src="../img/amenities/theatre_img.jpg" alt />
 				</div>
 				<div class="image">
-					<img src="../img/amenities/billiards-room.jpg" alt />
+					<img src="../img/amenities/club_img.jpg" alt />
 				</div>
 				<div class="image">
-					<img src="../img/amenities/piano-room.jpg" alt />
+					<img src="../img/amenities/billiards_img.jpg" alt />
+				</div>	
+				<div class="image">
+					<img src="../img/amenities/games_img.jpg" alt />
+				</div>	
+				<div class="image">
+					<img src="../img/amenities/music_img.jpg" alt />
+				</div>	
+				<div class="image">
+					<img src="../img/amenities/study_img.jpg" alt />
 				</div>				
 			</div>
 		</div>

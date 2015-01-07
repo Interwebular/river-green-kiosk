@@ -40,7 +40,7 @@ nav {height:0; width:200px; position: absolute; bottom:100px; left:0; background
 nav.open {height:550px; width:200px; position: absolute; bottom:101px; left:0; background: #4d4d4d;}
 nav ul {padding:0; margin:0;}
 nav ul li {height:110px; color:#fff; text-transform: uppercase; text-align: center; border-top:1px solid #a6a6a6; position: relative;  font-family: 'Gotham-Bold'; text-shadow: 0px -1px #000; letter-spacing: 2px;}
-nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transform: lowercase;  font-family: 'Didot-HTF-L11-Light-Ital'; text-shadow: 0px -1px #000; font-size:18px; color: #d3d3d3; line-height: 1;}
+nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transform: lowercase;  font-family: 'Didot-HTF-L11-Light-Ital'; text-shadow: 0px -1px #000; font-size:18px; color: #d3d3d3; line-height: 1;}
 
 .menu-toggle {height:101px; width:200px; position: absolute; bottom:0; left:0;  background: url(../img/button_bg.png) no-repeat top left; }
 
@@ -52,7 +52,7 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 #zoom-parent .animation-image { z-index:1; position: absolute; top:0px; left:0px; } */
 
 /*ZOOMED IN AND OUT CONTROLS*/
-#zoom-controls-wrapper {height:60px; width:280px; position: absolute; bottom:0; left:50%; margin:0 0 0 -140px; z-index:99999;}
+#zoom-controls-wrapper {height:60px; width:280px; position: absolute; bottom:0; left:52%; margin:0 0 0 -140px; z-index:99999;}
 #zoom-controls {height: 60px; width: 160px; background: #999; position: relative; background: #282d2e; color: #fff; font-family: 'Gotham-Medium'; text-transform: uppercase; font-size:22px; text-align: center; line-height:3;}
 #zoom-controls #zoom_out {height: 60px; width:60px; position: absolute; top: 0; left:-60px; background: #5f6769; text-align: center; color: #fff; font-size: 52px; font-weight: lighter; line-height:1; font-family: arial; }
 	#zoom-controls #zoom_out.on {background: #1baf97;}
@@ -79,7 +79,7 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 	.hotspot-popup .close {position: absolute; top:20px; right:20px; height:40px; width:40px; background: url(../img/close.gif) no-repeat top left;}
 	.hotspot-popup h1 {padding:70px 0 0px 0; margin:0; text-align: center; text-decoration: uppercase;} 
 	.hotspot-popup h2 {padding:0 0 20px 0; margin:0; text-align: center; background: url(../img/divider.gif) no-repeat bottom center; color: #1baf97; font-family: "Didot-HTF-L11-Light-Ital";}
-	.hotspot-popup .content p  {text-align: center; line-height: 1.6; font-size:14px !important; font-family: arial;}
+	.hotspot-popup .content p  {text-align: center; line-height: 1.4; font-size:12px !important; font-family: arial;}
 
 #hotspots-in .hotspot-popup.on {height:460px; width:900px; opacity:1; position: absolute; z-index:9;}
 
@@ -100,33 +100,31 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:12px; text-transfo
 #zo-hotspot-11 {top:335px; left:2700px;}
 #zo-hotspot-12 {top:396px; left:2800px;}
 #zo-hotspot-13 {top:810px; left:2854px;}
+#zo-hotspot-14 {top:610px; left:2754px;}
 
-#zi-hotspot-1 {top:674px;  left:1180px;}
+#zi-hotspot-1 {top:710px;  left:1280px;}
 #hotspot-popup-1 {top:170px;  left:910px;}
 
-#zi-hotspot-2 {top:476px; left:1240px;}
+#zi-hotspot-2 {top:440px; left:1520px;}
 #hotspot-popup-2 {top:170px;  left:1320px;}
 
-#zi-hotspot-3 {top:446px; left:1592px;}
+#zi-hotspot-3 {top:430px; left:1740px;}
 #hotspot-popup-3 {top:180px;  left:1674px;}
 
-/*#zi-hotspot-4 {top:960px; left:1646px;}
-#hotspot-popup-4 {}*/
+#zi-hotspot-4 {top:600px; left:1950px;}
+#hotspot-popup-4 {}
 
 #zi-hotspot-5 {top:686px; left:1966px;}
 #hotspot-popup-5 {top:400px;  left:2042px;}
 
-#zi-hotspot-6 {top:460px; left:2126px;}
+#zi-hotspot-6 {top:460px; left:2060px;}
 #hotspot-popup-6 {top:200px;  left:2202px;}
 
-#zi-hotspot-7 {top:330px; left:2246px;}
+#zi-hotspot-7 {top:330px; left:2280px;}
 #hotspot-popup-7 {top:100px;  left:2312px;}
 
-#zi-hotspot-8 {top:398px; left:2546px;}
-#hotspot-popup-8 {top:100px;  left:2612px;}
-
-#zi-hotspot-9 {top:204px; left:2860px;}
-#hotspot-popup-9 {top:280px;  left:2712px;}
+#zi-hotspot-8 {top:560px; left:2310px;}
+#hotspot-popup-8 {top:350px;  left:2380px;}
 
 #hotspots-in .hotspot-dot {opacity:0;}
 #hotspots-in.delete-hotspots .hotspot-dot {opacity:0; pointer-events: none;}
