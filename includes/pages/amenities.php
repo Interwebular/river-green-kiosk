@@ -36,7 +36,7 @@
 	
 	
     <div class="right-col">
-    	<a class="close-menu-content close-left-menu-button"></a>
+    	<a class="close-menu-content close-<?php echo $side; ?>-menu-button"></a>
 		<div class="carousel-content amenities-carousel-content-<?php echo $side; ?>">
 			<div>
 				<h1>INFINITY POOL</h1>

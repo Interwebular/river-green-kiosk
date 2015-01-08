@@ -42,9 +42,10 @@
 		$( ".nav-left" ).toggleClass( 'open' );
 	}); */
 
+	/*
 	$( "#menu-toggle-right" ).on( "click", function() {
 	  $( ".nav-right" ).toggleClass( 'open' );
-	});
+	}); */
 
 
 

@@ -46,19 +46,19 @@
 				<div id="page-content-left">
 					<div id="page-content-left-inner">
 						<div id="page-content-left-animation">
-							<div class="page-content the-views-content">
+							<div class="page-content-left the-views-content">
 								<?php require('includes/pages/the-views.php');  ?>
 							</div>
-							<div class="page-content amenities-content">
+							<div class="page-content-left amenities-content">
 								<?php require('includes/pages/amenities.php');  ?>
 							</div>
-							<div class="page-content the-suites-content">
+							<div class="page-content-left the-suites-content">
 								<?php require('includes/pages/the-suites.php');  ?>
 							</div>
-							<div class="page-content community-content">
+							<div class="page-content-left community-content">
 								<?php require('includes/pages/community.php');  ?>
 							</div>
-							<div class="page-content quick-facts-content">
+							<div class="page-content-left quick-facts-content">
 								<?php require('includes/pages/quick-facts.php');  ?>
 							</div>
 						</div>
@@ -76,11 +76,11 @@
 				<div id="logo-wrap"></div>
 				<nav class="nav-right">
 					<ul>
-						<li class="load-page-right" data-page="the-views" data-height="90"><span>check out</span>the views</li>
-						<li class="load-page-right" data-page="amenities" data-height="200"><span>view the</span>amenities</li>
-						<li class="load-page-right" data-page="the-suites" data-height="310"><span>see inside</span>the suites</li>
-						<li class="load-page-right" data-page="community" data-height="420"><span>learn about</span>community</li>
-						<li class="load-page-right" data-page="quick-facts" data-height="525"><span>view our</span>quick facts</li>
+						<li class="load-page-right" data-page="the-views" data-height="90" data-margin="0" data-arrow="153"><span>check out</span>the views</li>
+						<li class="load-page-right" data-page="amenities" data-height="200" data-margin="580" data-arrow="262"><span>view the</span>amenities</li>
+						<li class="load-page-right" data-page="the-suites" data-height="310" data-margin="1160" data-arrow="376"><span>see inside</span>the suites</li>
+						<li class="load-page-right" data-page="community" data-height="420" data-margin="1740" data-arrow="490"><span>learn about</span>community</li>
+						<li class="load-page-right" data-page="quick-facts" data-height="435" data-margin="2320" data-arrow="602"><span>view our</span>quick facts</li>
 					</ul>
 				</nav>
 				<div id="menu-toggle-right" class="menu-toggle"></div>
@@ -95,19 +95,19 @@
 				<div id="page-content-right">
 					<div id="page-content-right-inner">
 						<div id="page-content-right-animation">
-							<div class="page-content the-views-content">
-								<?php //require('includes/pages/the-views.php');  ?>
+							<div class="page-content-right the-views-content">
+								<?php require('includes/pages/the-views.php');  ?>
 							</div>
-							<div class="page-content amenities-content">
+							<div class="page-content-right amenities-content">
 								<?php require('includes/pages/amenities.php');  ?>
 							</div>
-							<div class="page-content the-suites-content">
+							<div class="page-content-right the-suites-content">
 								<?php require('includes/pages/the-suites.php');  ?>
 							</div>
-							<div class="page-content community-content">
+							<div class="page-content-right community-content">
 								<?php require('includes/pages/community.php');  ?>
 							</div>
-							<div class="page-content quick-facts-content">
+							<div class="page-content-right quick-facts-content">
 								<?php require('includes/pages/quick-facts.php');  ?>
 							</div>
 						</div>
@@ -138,6 +138,6 @@
 		<script src="js/clouds.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/nav.js"></script>
-		<!-- <script src="js/nav-right.js"></script> -->
+		<script src="js/nav-right.js"></script>
     </body>
 </html>

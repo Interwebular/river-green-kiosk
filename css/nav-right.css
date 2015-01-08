@@ -2,7 +2,7 @@
 
 #page-content-container-right {
 	position: absolute;
-	right: 210px;
+	right: 190px;
 	/* width: 1140px; */
 	width: 0;
 	height: 600px;
@@ -17,13 +17,13 @@
 	width: 30px;
 	position: absolute;
 	z-index: 50;
-	right: 280px;
+	right: 165px;
 	top: 250px;
 }
 
 	#right-arrow img {
 		position: absolute;
-		left: 30px;
+		left: -30px;
 		transform: translateY(-50%);
 		/* display: none; */
 		display: none;
@@ -32,7 +32,7 @@
 	}
 
 
-	.is_open {
+	.is_open_right {
 		transition: top 0.4s;
 	}
 
@@ -54,7 +54,7 @@
 	
 	}
 	
-	.page-content { 
+	.page-content-right {
 		height: 560px;
 		margin-bottom: 20px;
 		width: 100%;
@@ -77,9 +77,9 @@
 		transform: translateY(-50%);
 	}
 
-	/*
+
 	
-	.panorama_menu_bg {
+	.panorama_menu_bg_right {
 		position: absolute;
 		z-index: 100;
 		bottom: 63px;
@@ -87,7 +87,7 @@
 		display: none;
 	}
 	
-	.panorama_menu_items {
+	.panorama_menu_items_right {
 		width: 140px;
 		height: 230px;
 		position: absolute;
@@ -96,19 +96,19 @@
 		z-index: 110;
 		display: none;
 	}
-		.panorama_menu_items .title {
+		.panorama_menu_items_right .title {
 			text-align: center;
 			font-family: 'Didot-HTF-L11-Light-Ital';
 			text-shadow: 0px -1px #000;
 			color: #d3d3d3;
 		}
 		
-		.panorama_menu_items ul {
+		.panorama_menu_items_right ul {
 			list-style: none;
 			margin: 20px 0 0 0; padding: 0;
 		}
 		
-		.panorama_menu_items ul li a{
+		.panorama_menu_items_right ul li a{
 			color: #fff;
 			font-family: 'Gotham-Bold';
 			text-shadow: 0px -1px #000;
@@ -119,16 +119,16 @@
 			font-size: 12px;
 			outline: none;
 		}
-		.panorama_menu_items ul li a.switch-floor-active {
+		.panorama_menu_items_right ul li a.switch-floor-right-active {
 			color: #1BAF97;
 			outline: none;
 		}
 		
 
 		
-		.panorama_menu_items ul li a.border {
+		.panorama_menu_items_right ul li a.border {
 			border-bottom: 1px solid #424647;
-		} */
+		}
 		
 
 	

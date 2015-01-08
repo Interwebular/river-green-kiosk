@@ -24,7 +24,7 @@
 	
 	
     <div class="right-col">
-		<a class="close-menu-content close-left-menu-button"></a>
+		<a class="close-menu-content close-<?php echo $side; ?>-menu-button"></a>
 		<div class="carousel-content suites-carousel-content-<?php echo $side; ?>">
 			<div>
 				<h1>KITCHEN</h1>
