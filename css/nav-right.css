@@ -76,7 +76,8 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
+
+	/*
 	
 	.panorama_menu_bg {
 		position: absolute;
@@ -127,146 +128,9 @@
 		
 		.panorama_menu_items ul li a.border {
 			border-bottom: 1px solid #424647;
-		}
-		
+		} */
 		
 
-		
-		
-		
-		
-		
-		
-	.container-row {
-		width: 100%;
-		height: 100%;
-	}
-		.container-row .left-col {
-			height: 100%;
-			float: left; 			
-		}
-			.container-row .left-col .carousel-container {
-				width: 640px;
-				height: 100%;
-				position: relative;
-			}
-			
-			.container-row .left-col .carousel-container .carousel-arrow {
-				height: 90px;
-				width: 80px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				z-index: 1000;
-			}
-				.container-row .left-col .carousel-container .arrow-left { left: 0; }
-				.container-row .left-col .carousel-container .arrow-right { right: 0; }
-			
-			
-			.carousel-images .slick-prev {
-				height: 50px;
-				width: 50px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				z-index: 1000;
-				left: 0;
-				outline: none;
-				border: none;
-				background: url(../img/car_arrow_left.png) center center no-repeat #1baf97;
-			}
-			.carousel-images .slick-next {
-				height: 50px;
-				width: 50px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				z-index: 1000;
-				right: 0;
-				outline: none;
-				border: none;
-				background: url(../img/car_arrow_right.png) center center no-repeat #1baf97;				
-			}			
-			
-			.container-row .left-col .carousel-container .carousel-images {
-				position: absolute;
-				width: 100%; height: 100%;
-				overflow: hidden;
-				
-			}
-			/*
-				.container-row .left-col .carousel-container .carousel-images .image {
-					width: 640px;
-					height: 100%;
-					display: none;
-				} */
-				.container-row .left-col .carousel-container .carousel-images img { width: 640px; }
-				.container-row .left-col .carousel-container .carousel-images .image.active { display: block; } 
-				.container-row .left-col .carousel-container .carousel-images .image .title {  display: none; }
-				.container-row .left-col .carousel-container .carousel-images .image .desc {  display: none; }
-			
-		.container-row .right-col {
-			width: 420px;
-			margin: 0 0 0 20px;
-			height: 100%;
-			float: left;		
-		}
-		
-		.container-row .right-col .carousel-content h1 {
-			width: 80%;
-			margin: 35px auto 0 auto;
-			text-align: center;
-			padding: 0;		
-		}
-		.container-row .right-col .carousel-content h2 {
-			color: #3bbaa6;
-			font-style: italic;
-			font-weight: 100;
-			text-align: center;
-			margin: 5px 20px 0 20px;
-			padding: 0 60px 0 60px;
-			font-size:32px;
-			font-family: 'Didot-HTF-L11-Light-Ital';
-			position: relative;
-			display: block;
-			text-align: center;
-		}
-
-		.carousel-content h2:before {content:""; display: inline-block; background: url(../img/title-line-left.gif) no-repeat left -6px; height:15px; width:47px;}
-		.carousel-content h2:after {content:"";  display: inline-block; height:15px; width:47px; padding:0 0 0 9px; background: url(../img/title-line-left.gif) no-repeat right -6px; }
-
-		.container-row .right-col .carousel-content p {
-			width: 90%;
-			margin: 30px auto;
-			text-align: center;
-			padding: 0;
-			line-height:1.6;
-		} 
-
-		
-	.clear {
-		clear: both;
-	}
-		
-		
-	
-	.panorama-control-left, .panorama-control-right, .panorama-control-pause {
-		padding: 0 0 0 0;
-		line-height: 80px;
-	}
-	
-	.menu-toggle {
-		background: url( ../img/button_closed.png ) top center no-repeat;
-		transition: background 0.2s;
-	}
-	.menu-toggle.opened {
-		background: url( ../img/button_opened.png ) top center no-repeat;
-	}
-
-
-.close-menu-content {height: 40px; width:40px; position: absolute; top:0px; right:0px; background: url(../img/close.gif) no-repeat top right; z-index: 51;}
-	
-.close-menu-content-white {height: 40px; width: 40px; top:20px; right: 20px; position: absolute; background: url(../img/close-white.gif) no-repeat top left;z-index: 51; }
 	
 	
 	

@@ -1,7 +1,7 @@
 <div class="container-row">
     <div class="left-col">
 		<div class="carousel-container">
-			<div class="carousel-images community-carousel-images">
+			<div class="carousel-images community-carousel-images-<?php echo $side; ?>">
 				<div class="image">
 					<img src="../img/community/garden_img.jpg" alt />
 				</div>
@@ -27,7 +27,7 @@
 	
     <div class="right-col">
 		<a class="close-menu-content close-left-menu-button"></a>
-		<div class="carousel-content community-carousel-content">
+		<div class="carousel-content community-carousel-content-<?php echo $side; ?>">
 			<div>
 				<h1>WATER GARDEN</h1>
 				<h2>tranquil retreat</h2>

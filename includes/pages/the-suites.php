@@ -2,7 +2,7 @@
 <div class="container-row">
     <div class="left-col">
 		<div class="carousel-container">
-			<div class="carousel-images suites-carousel-images">
+			<div class="carousel-images suites-carousel-images-<?php echo $side; ?>">
 				<div class="image">
 					<img src="../img/suite/kitchen_img.jpg" alt />
 				</div>
@@ -25,7 +25,7 @@
 	
     <div class="right-col">
 		<a class="close-menu-content close-left-menu-button"></a>
-		<div class="carousel-content suites-carousel-content">
+		<div class="carousel-content suites-carousel-content-<?php echo $side; ?>">
 			<div>
 				<h1>KITCHEN</h1>
 				<h2>inspiring culinary art</h2>

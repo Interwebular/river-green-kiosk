@@ -56,32 +56,26 @@
 
    	$('#zoom_in').click(function(e){
 
-		//$("#hotspots-out").addClass("delete-hotspots").removeClass("show-hotspots");
-
 		$("#hotspots-out").hide();
-
-	  	zoom_in(function(){
-		 	$("#hotspots-in").addClass("show-hotspots");
-	  	});
-
+		$("#zoom_out").addClass( 'zoom_disabled' );
+		zoom_in(function(){
+			$("#hotspots-in").show();
+			$("#zoom_out").removeClass( 'zoom_disabled' );
+		});
 		e.preventDefault();
    	});
 
 	
    $('#zoom_out').click(function(e){
 
-	   $("#hotspots-in").addClass("delete-hotspots").removeClass("show-hotspots");
-	   $(".hotspot-popup").removeClass('on');
-	   $(".hotspot-dot").removeClass('on');
-
-
-	  	zoom_out(function(){
-		 	//$("#hotspots-out").addClass('show-hotspots');
-			$("#hotspots-out").show();
-			$("#hotspots-in").removeClass("delete-hotspots");
-
-	 	});
+	   $("#hotspots-in").hide();
+	   $("#zoom_in").addClass( 'zoom_disabled' );
+	   zoom_out(function(){
+		   $("#hotspots-out").show();
+		   $("#zoom_in").removeClass( 'zoom_disabled' );
+	   });
 	  	e.preventDefault();
-   });	
+   });
+
 
 })( jQuery );

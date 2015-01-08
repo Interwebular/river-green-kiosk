@@ -1,5 +1,5 @@
 <div id="zoom-parent">
-	<img class="animation-image" id="default_image" src="img/zoom_animation/multi_touch_zoom_00000.jpg">
+	<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00000.jpg" style="display: block;">
 	<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00001.jpg">
 	<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00002.jpg">
 	<img class="animation-image" src="img/zoom_animation/multi_touch_zoom_00003.jpg">

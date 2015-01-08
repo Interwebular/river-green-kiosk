@@ -19,7 +19,7 @@
 }
 
 #zoom-parent {
-	background: url('../img/out-spots.jpg') 0px 0px no-repeat;
+	/* background: url('../img/out-spots.jpg') 0px 0px no-repeat; */
 	position: absolute;
 	width: 3840px;
 	height: 1080px;
@@ -75,7 +75,8 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transfo
 
 
 .hotspot-wrap {position: relative;}
-#hotspots-in .hotspot-popup {opacity:0;height:460px; width:900px; position: absolute;  z-index:9; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
+
+#hotspots-in .hotspot-popup {/* opacity:0; */ display:none; height:460px; width:900px; position: absolute;  z-index:9; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;  /*pointer-events: none; */ }
 	.hotspot-popup img {height:460px; width:540px; float: left;}
 	.hotspot-popup .content {height:460px; width:315px; margin:0 0 0 25px; float: left;}
 	.hotspot-popup .close {position: absolute; top:20px; right:20px; height:40px; width:40px; background: url(../img/close.gif) no-repeat top left;}
@@ -83,10 +84,10 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transfo
 	.hotspot-popup h2 {padding:0 0 20px 0; margin:0; text-align: center; background: url(../img/divider.gif) no-repeat bottom center; color: #1baf97; font-family: "Didot-HTF-L11-Light-Ital";}
 	.hotspot-popup .content p  {text-align: center; line-height: 1.4; font-size:12px !important; font-family: arial;}
 
-#hotspots-in .hotspot-popup.on {height:460px; width:900px; opacity:1; position: absolute; z-index:9;}
+/* #hotspots-in .hotspot-popup.on {height:460px; width:900px; opacity:1; position: absolute; z-index:9;} */
 
 #hotspots-out .hotspot-popup {opacity:0; height:30px; width: auto; white-space: nowrap; padding: 4px 20px 0 20px; position: absolute;  z-index:9; top:-50px; left:-40px; background: #fff; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease; pointer-events: none;}
-#hotspots-out .hotspot-dot.on .hotspot-popup {height:30px; width: auto; opacity:1; position: absolute; z-index:9;}
+#hotspots-out .hotspot-dot.on .hotspot-popup {height:30px; width: auto;  opacity:1;  position: absolute; z-index:9;}
 
 
 #zo-hotspot-1 {top:92px;  left:1282px;}
@@ -105,13 +106,13 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transfo
 #zo-hotspot-14 {top:610px; left:2754px;}
 
 #zi-hotspot-1 {top:710px;  left:1280px;}
-#hotspot-popup-1 {top:170px;  left:910px;}
+#hotspot-popup-1 {top:580px;  left:350px;}
 
 #zi-hotspot-2 {top:440px; left:1520px;}
-#hotspot-popup-2 {top:170px;  left:1320px;}
+#hotspot-popup-2 {top:50px;  left:590px;}
 
 #zi-hotspot-3 {top:430px; left:1740px;}
-#hotspot-popup-3 {top:180px;  left:1674px;}
+#hotspot-popup-3 {top:50px;  left:1800px;}
 
 #zi-hotspot-4 {top:600px; left:1950px;}
 #hotspot-popup-4 {}
@@ -123,18 +124,22 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transfo
 #hotspot-popup-6 {top:200px;  left:2202px;}
 
 #zi-hotspot-7 {top:330px; left:2280px;}
-#hotspot-popup-7 {top:100px;  left:2312px;}
+#hotspot-popup-7 {top:50px;  left:2350px;}
 
 #zi-hotspot-8 {top:560px; left:2310px;}
-#hotspot-popup-8 {top:350px;  left:2380px;}
+#hotspot-popup-8 {top:550px;  left:2380px;}
 
+#hotspots-in { display: none; }
+
+/*
 #hotspots-in .hotspot-dot {opacity:0;}
 #hotspots-in.delete-hotspots .hotspot-dot {opacity:0; pointer-events: none;}
 #hotspots-in.show-hotspots   .hotspot-dot {opacity:1;}
-
+*/
+/*
 #hotspots-out {}
 #hotspots-out.delete-hotspots .hotspot-dot {opacity:0; pointer-events: none;}
-#hotspots-out.show-hotspots   .hotspot-dot {opacity:1;}
+#hotspots-out.show-hotspots   .hotspot-dot {opacity:1;} */
 
 /*PAGES*/
 .page-wrap-left {  height: 0px; width: 0px; margin:300px 0 0 0; background: #fff; position: absolute; z-index:20; box-shadow: 5px 1px 30px rgba(000,000,000,0.5); transition: all 1s ease;}
@@ -294,5 +299,7 @@ nav ul li span {padding:36px 0 0 0; display: block; font-size:10px; text-transfo
 
 
 
-
+.zoom_disabled {
+	pointer-events: none;
+}
 

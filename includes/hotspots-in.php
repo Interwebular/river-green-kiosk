@@ -6,7 +6,6 @@
     <div id="hotspot-popup-1" class="hotspot-popup">
         <img src="img/zoomed-in/hotspot-img.jpg" />
         <div class="content">
-            <i class="fa fa-camera-retro fa-lg"></i>
             <div class="close"></div>
             <h1>1 RIVER GREEN</h1>
             <h2>unrivalled luxury</h2>

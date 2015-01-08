@@ -18,7 +18,7 @@
     </head>
     <body>
 		<div id="viewport-container">
-			<?php require('includes/clouds.php'); ?>
+			<?php //require('includes/clouds.php'); ?>
 
 			<div id="frame"></div>
 
@@ -40,7 +40,8 @@
 			<div id="left-arrow">
 				<img src="img/arrow_left.png" />
 			</div>
-				
+
+			<?php $side = 'left'; ?>
 			<div id="page-content-container-left">
 				<div id="page-content-left">
 					<div id="page-content-left-inner">
@@ -89,7 +90,7 @@
 				<img src="img/arrow_right.png" />
 			</div>
 
-
+			<?php $side = 'right'; ?>
 			<div id="page-content-container-right">
 				<div id="page-content-right">
 					<div id="page-content-right-inner">
@@ -98,16 +99,16 @@
 								<?php //require('includes/pages/the-views.php');  ?>
 							</div>
 							<div class="page-content amenities-content">
-								<?php //require('includes/pages/amenities.php');  ?>
+								<?php require('includes/pages/amenities.php');  ?>
 							</div>
 							<div class="page-content the-suites-content">
-								<?php //require('includes/pages/the-suites.php');  ?>
+								<?php require('includes/pages/the-suites.php');  ?>
 							</div>
 							<div class="page-content community-content">
-								<?php //require('includes/pages/community.php');  ?>
+								<?php require('includes/pages/community.php');  ?>
 							</div>
 							<div class="page-content quick-facts-content">
-								<?php //require('includes/pages/quick-facts.php');  ?>
+								<?php require('includes/pages/quick-facts.php');  ?>
 							</div>
 						</div>
 					</div>

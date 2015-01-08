@@ -68,18 +68,18 @@
     }
 
     $(function(){
-        generateClouds();
+        //generateClouds();
     });
 
     $('.clouds_in').click(function(){
-        clouds.stop();
-        clouds.fadeOut();
+        //clouds.stop();
+        //clouds.fadeOut();
 
     });
 
 
     $('.clouds_out').click(function(){
-        generateClouds();
+        //generateClouds();
     });
 
 

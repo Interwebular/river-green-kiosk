@@ -2,7 +2,7 @@
   <div class="container-row">
     <div class="left-col">
 		<div class="carousel-container">
-			<div class="carousel-images amenities-carousel-images">
+			<div class="carousel-images amenities-carousel-images-<?php echo $side; ?>">
 				<div class="image">
 					<img src="../img/amenities/pool_img.jpg" alt />
 				</div>
@@ -37,7 +37,7 @@
 	
     <div class="right-col">
     	<a class="close-menu-content close-left-menu-button"></a>
-		<div class="carousel-content amenities-carousel-content">
+		<div class="carousel-content amenities-carousel-content-<?php echo $side; ?>">
 			<div>
 				<h1>INFINITY POOL</h1>
 				<h2>&amp; whirlpool</h2>

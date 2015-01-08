@@ -2,7 +2,7 @@
   <div class="container-row">
     	<div class="left-col">
 			<div class="carousel-container">
-				<div class="carousel-images facts-carousel-images">
+				<div class="carousel-images facts-carousel-images-<?php echo $side; ?>">
 					<div class="image">
 						<img src="../img/quickfacts/qf_img_01.jpg" alt />
 					</div>
@@ -16,7 +16,7 @@
 
 	  <div class="right-col">
 		  <a class="close-menu-content close-left-menu-button"></a>
-		  <div class="carousel-content facts-carousel-content">
+		  <div class="carousel-content facts-carousel-content-<?php echo $side; ?>">
 				<div>
 					<h1>RIVER GREEN</h1>
 					<h2>quick facts</h2>
