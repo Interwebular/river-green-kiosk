@@ -56,24 +56,29 @@
 
    	$('#zoom_in').click(function(e){
 
-		$("#hotspots-out").hide();
-		$("#zoom_out").addClass( 'zoom_disabled' );
-		zoom_in(function(){
-			$("#hotspots-in").show();
-			$("#zoom_out").removeClass( 'zoom_disabled' );
-		});
+		if( !$(this).hasClass('on') ) { 
+	
+			$("#hotspots-out").hide();
+			$("#zoom_out").addClass( 'zoom_disabled' );
+			zoom_in(function(){
+				$("#hotspots-in").show();
+				$("#zoom_out").removeClass( 'zoom_disabled' );
+			});
+		
+		}
 		e.preventDefault();
    	});
 
 	
    $('#zoom_out').click(function(e){
-
-	   $("#hotspots-in").hide();
-	   $("#zoom_in").addClass( 'zoom_disabled' );
-	   zoom_out(function(){
-		   $("#hotspots-out").show();
-		   $("#zoom_in").removeClass( 'zoom_disabled' );
-	   });
+		if( !$(this).hasClass('on') ) { 
+			$("#hotspots-in").hide();
+			$("#zoom_in").addClass( 'zoom_disabled' );
+			zoom_out(function(){
+				$("#hotspots-out").show();
+				$("#zoom_in").removeClass( 'zoom_disabled' );
+			});
+		}
 	  	e.preventDefault();
    });
 
